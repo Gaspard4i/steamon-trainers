@@ -215,7 +215,7 @@ jobs:
         run: |
           set -euo pipefail
           if [ -z "${MODRINTH_TOKEN:-}" ]; then
-            echo "MODRINTH_TOKEN secret missing — skipping Modrinth publish."; exit 0
+            echo "MODRINTH_TOKEN secret missing: skipping Modrinth publish."; exit 0
           fi
 
           FEATURED=false
@@ -262,7 +262,7 @@ jobs:
         run: |
           set -euo pipefail
           if [ -z "${CURSEFORGE_TOKEN:-}" ]; then
-            echo "CURSEFORGE_TOKEN secret missing — skipping CurseForge publish."; exit 0
+            echo "CURSEFORGE_TOKEN secret missing: skipping CurseForge publish."; exit 0
           fi
 
           VERSION="$VERSION" CHANNEL="$CHANNEL" python3 - <<'PYEOF' > /tmp/cf_meta.json
