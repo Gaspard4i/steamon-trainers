@@ -1,0 +1,287 @@
+name: Publish Steamon Trainers
+
+on:
+  push:
+    tags:
+      # Tag format: v<version>-<channel>  (channel optional, defaults to alpha)
+      #   channel = alpha | beta | release
+      # e.g. v1.0.0-alpha, v1.0.0-beta, v1.0.0-release, or plain v1.0.0
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version (e.g. 1.0.0)'
+        required: true
+        type: string
+      channel:
+        description: 'Release channel'
+        required: true
+        type: choice
+        options: [alpha, beta, release]
+        default: alpha
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Detect version and channel
+        id: meta
+        run: |
+          if [ -n "${{ inputs.version }}" ]; then
+            VERSION="${{ inputs.version }}"
+            CHANNEL="${{ inputs.channel }}"
+          else
+            TAG="${GITHUB_REF_NAME}"        # e.g. v1.0.0-beta
+            REST="${TAG#v}"
+            if [[ "$REST" == *-alpha ]]; then CHANNEL=alpha; VERSION="${REST%-alpha}"
+            elif [[ "$REST" == *-beta ]]; then CHANNEL=beta; VERSION="${REST%-beta}"
+            elif [[ "$REST" == *-release ]]; then CHANNEL=release; VERSION="${REST%-release}"
+            else CHANNEL=alpha; VERSION="$REST"; fi
+          fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "channel=$CHANNEL" >> "$GITHUB_OUTPUT"
+          echo "Detected: version=$VERSION channel=$CHANNEL"
+
+      - name: Validate all JSON files
+        run: |
+          set -euo pipefail
+          FAIL=0
+          while IFS= read -r -d '' f; do
+            if ! python3 -m json.tool "$f" > /dev/null; then
+              echo "[FAIL] Invalid JSON: $f"
+              FAIL=1
+            fi
+          done < <(find data assets -name "*.json" -print0)
+          if ! python3 -m json.tool pack.mcmeta > /dev/null; then
+            echo "[FAIL] Invalid JSON: pack.mcmeta"
+            FAIL=1
+          fi
+          if [ "$FAIL" -ne 0 ]; then exit 1; fi
+          echo "[ok] All JSON files are valid."
+
+      - name: Validate pack.mcmeta and trainer graph
+        run: |
+          set -euo pipefail
+          python3 - << 'PYEOF'
+          import json, os, sys
+
+          # pack_format must be 48 (MC 1.21.1)
+          with open('pack.mcmeta', encoding='utf-8') as f:
+              meta = json.load(f)
+          fmt = meta.get('pack', {}).get('pack_format')
+          if fmt != 48:
+              sys.exit(f"[FAIL] pack_format is {fmt}, expected 48")
+          print(f"[ok] pack_format = {fmt}")
+
+          base = "data/rctmod"
+          dirs = {
+              "mobs": f"{base}/mobs/trainers/single",
+              "trainers": f"{base}/trainers",
+              "dialogs": f"{base}/dialogs/trainers",
+              "loot": f"{base}/loot_table/trainers/single",
+          }
+          ids_by_dir = {}
+          for name, d in dirs.items():
+              if not os.path.isdir(d):
+                  sys.exit(f"[FAIL] missing directory: {d}")
+              ids_by_dir[name] = set(f[:-5] for f in os.listdir(d) if f.endswith(".json"))
+
+          texture_dir = "assets/rctmod/textures/trainers/single"
+          texture_ids = set(f[:-4] for f in os.listdir(texture_dir) if f.endswith(".png"))
+
+          adv_dir = f"{base}/advancement/trainers"
+          adv_ids = set(f[len("defeat_"):-5] for f in os.listdir(adv_dir) if f.endswith(".json"))
+
+          reference = ids_by_dir["mobs"]
+          if len(reference) != 13:
+              sys.exit(f"[FAIL] expected 13 trainers, found {len(reference)}")
+
+          all_sets = {**ids_by_dir, "textures": texture_ids, "advancement": adv_ids}
+          for name, s in all_sets.items():
+              if s != reference:
+                  sys.exit(f"[FAIL] ID mismatch in {name}: missing={reference - s}, extra={s - reference}")
+          print(f"[ok] All {len(reference)} trainer IDs are consistent across mobs/trainers/dialogs/loot/textures/advancement")
+
+          # requiredDefeats graph: no broken refs, exactly one root, fully connected chain
+          graph = {}
+          for tid in reference:
+              with open(os.path.join(dirs["mobs"], tid + ".json"), encoding="utf-8") as f:
+                  data = json.load(f)
+              reqs = data.get("requiredDefeats", [])
+              flat_refs = [r for group in reqs for r in group]
+              graph[tid] = flat_refs
+              for ref in flat_refs:
+                  if ref not in reference:
+                      sys.exit(f"[FAIL] {tid} requiredDefeats references unknown trainer '{ref}'")
+
+          roots = [tid for tid, reqs in graph.items() if not reqs]
+          if len(roots) != 1:
+              sys.exit(f"[FAIL] expected exactly 1 root trainer (no prerequisites), found {len(roots)}: {roots}")
+
+          unlocks = {tid: [] for tid in reference}
+          for tid, reqs in graph.items():
+              for r in reqs:
+                  unlocks[r].append(tid)
+
+          visited = set()
+          def walk(node):
+              visited.add(node)
+              for n in unlocks.get(node, []):
+                  if n not in visited:
+                      walk(n)
+          walk(roots[0])
+          if visited != reference:
+              sys.exit(f"[FAIL] trainer graph is not fully connected: unreached={reference - visited}")
+          print(f"[ok] requiredDefeats graph is a single connected chain from '{roots[0]}' through all {len(reference)} trainers")
+
+          # series.json sanity
+          with open(f"{base}/series/steamon.json", encoding="utf-8") as f:
+              series = json.load(f)
+          if "steamon" not in [os.path.splitext(f)[0] for f in os.listdir(f"{base}/series")]:
+              sys.exit("[FAIL] series/steamon.json missing")
+          print("[ok] series/steamon.json present")
+          PYEOF
+
+      - name: Build zip
+        id: build
+        run: |
+          set -euo pipefail
+          ZIP="steamon-trainers.zip"
+          rm -f "$ZIP"
+          zip -r "$ZIP" pack.mcmeta pack.png data assets -x '*.DS_Store'
+          echo "zip_path=$ZIP" >> "$GITHUB_OUTPUT"
+          ls -la "$ZIP"
+
+      - name: Smoke test the zip
+        env:
+          ZIP_PATH: ${{ steps.build.outputs.zip_path }}
+        run: |
+          set -euo pipefail
+          python3 - << 'PYEOF'
+          import zipfile, os, sys
+
+          path = os.environ['ZIP_PATH']
+          with zipfile.ZipFile(path) as z:
+              names = z.namelist()
+              bad = z.testzip()
+              if bad:
+                  sys.exit(f"[FAIL] Corrupt entry in zip: {bad}")
+
+              if 'pack.mcmeta' not in names:
+                  sys.exit("[FAIL] pack.mcmeta is not at the root of the zip")
+              print("[ok] pack.mcmeta is at the zip root")
+
+              mobs = [n for n in names if n.startswith('data/rctmod/mobs/trainers/single/') and n.endswith('.json')]
+              textures = [n for n in names if n.startswith('assets/rctmod/textures/trainers/single/') and n.endswith('.png')]
+              if len(mobs) != 13:
+                  sys.exit(f"[FAIL] expected 13 files in mobs/trainers/single, found {len(mobs)}")
+              if len(textures) != 13:
+                  sys.exit(f"[FAIL] expected 13 files in assets/textures/trainers/single, found {len(textures)}")
+              print(f"[ok] zip contains {len(mobs)} mob files and {len(textures)} texture files")
+          PYEOF
+
+      - name: Update stable "latest" GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.meta.outputs.version }}
+          CHANNEL: ${{ steps.meta.outputs.channel }}
+          ZIP_PATH: ${{ steps.build.outputs.zip_path }}
+        run: |
+          set -euo pipefail
+          ASSET="Steamon-Trainers.zip"
+          cp "$ZIP_PATH" "$ASSET"
+          NOTES="Always-latest Steamon Trainers datapack. This download link never changes. Current: ${VERSION} (${CHANNEL}). Requires RCTMod 0.18+, RCTAPI, Cobblemon 1.7.3+, Minecraft 1.21.1 NeoForge."
+          if gh release view latest >/dev/null 2>&1; then
+            gh release edit latest --title "Steamon Trainers (latest)" --notes "$NOTES"
+            gh release upload latest "$ASSET" --clobber
+          else
+            gh release create latest "$ASSET" --title "Steamon Trainers (latest)" --notes "$NOTES"
+          fi
+          echo "Stable URL: https://github.com/${GITHUB_REPOSITORY}/releases/download/latest/${ASSET}"
+
+      - name: Publish to Modrinth
+        if: vars.MODRINTH_PROJECT_ID != ''
+        env:
+          MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+          MODRINTH_PROJECT_ID: ${{ vars.MODRINTH_PROJECT_ID }}
+          VERSION: ${{ steps.meta.outputs.version }}
+          CHANNEL: ${{ steps.meta.outputs.channel }}
+          ZIP_PATH: ${{ steps.build.outputs.zip_path }}
+        run: |
+          set -euo pipefail
+          if [ -z "${MODRINTH_TOKEN:-}" ]; then
+            echo "MODRINTH_TOKEN secret missing — skipping Modrinth publish."; exit 0
+          fi
+
+          FEATURED=false
+          if [ "$CHANNEL" = "release" ]; then FEATURED=true; fi
+
+          PROJECT_ID="$MODRINTH_PROJECT_ID" NAME="Steamon Trainers $VERSION ($CHANNEL)" \
+              VERSION_NUMBER="$VERSION" VERSION_TYPE="$CHANNEL" FEATURED="$FEATURED" \
+              ZIP_PATH="$ZIP_PATH" python3 - <<'PYEOF' > /tmp/mr_data.json
+          import json, os
+          print(json.dumps({
+              'name': os.environ['NAME'],
+              'version_number': os.environ['VERSION_NUMBER'],
+              'changelog': '',
+              'project_id': os.environ['PROJECT_ID'],
+              'dependencies': [],
+              'game_versions': ['1.21.1'],
+              'version_type': os.environ['VERSION_TYPE'],
+              'loaders': ['datapack'],
+              'featured': os.environ['FEATURED'] == 'true',
+              'status': 'listed',
+              'file_parts': [os.path.basename(os.environ['ZIP_PATH'])],
+          }))
+          PYEOF
+
+          HTTP=$(curl -s -o /tmp/mr_resp.json -w "%{http_code}" \
+            -X POST "https://api.modrinth.com/v2/version" \
+            -H "Authorization: $MODRINTH_TOKEN" \
+            -H "User-Agent: github.com/Gaspard4i/steamon-trainers" \
+            -F "data=@/tmp/mr_data.json;type=application/json" \
+            -F "$(basename "$ZIP_PATH")=@${ZIP_PATH};type=application/zip")
+          echo "Modrinth HTTP: $HTTP"
+          cat /tmp/mr_resp.json
+          echo
+          if [ "$HTTP" != "200" ]; then exit 1; fi
+
+      - name: Publish to CurseForge
+        if: vars.CURSEFORGE_ID != ''
+        env:
+          CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
+          CURSEFORGE_ID: ${{ vars.CURSEFORGE_ID }}
+          VERSION: ${{ steps.meta.outputs.version }}
+          CHANNEL: ${{ steps.meta.outputs.channel }}
+          ZIP_PATH: ${{ steps.build.outputs.zip_path }}
+        run: |
+          set -euo pipefail
+          if [ -z "${CURSEFORGE_TOKEN:-}" ]; then
+            echo "CURSEFORGE_TOKEN secret missing — skipping CurseForge publish."; exit 0
+          fi
+
+          VERSION="$VERSION" CHANNEL="$CHANNEL" python3 - <<'PYEOF' > /tmp/cf_meta.json
+          import json, os
+          print(json.dumps({
+              'changelog': '',
+              'changelogType': 'markdown',
+              'displayName': 'Steamon Trainers ' + os.environ['VERSION'] + ' (' + os.environ['CHANNEL'] + ')',
+              'releaseType': os.environ['CHANNEL'],
+              'gameVersions': [11779],
+          }))
+          PYEOF
+
+          HTTP=$(curl -s -o /tmp/cf_resp.json -w "%{http_code}" \
+            -X POST "https://minecraft.curseforge.com/api/projects/${CURSEFORGE_ID}/upload-file" \
+            -H "X-Api-Token: ${CURSEFORGE_TOKEN}" \
+            -H "User-Agent: github.com/Gaspard4i/steamon-trainers" \
+            -F "metadata=</tmp/cf_meta.json" \
+            -F "file=@${ZIP_PATH};type=application/zip")
+          echo "CurseForge HTTP: $HTTP"
+          cat /tmp/cf_resp.json; echo
+          if [ "$HTTP" != "200" ] && [ "$HTTP" != "201" ]; then exit 1; fi
