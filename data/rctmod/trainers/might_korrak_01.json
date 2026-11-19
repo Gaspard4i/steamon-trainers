@@ -1,0 +1,85 @@
+{
+  "name": "Korrak",
+  "identity": "Korrak",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.35
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "throh",
+      "level": 40,
+      "nature": "adamant",
+      "ability": "guts",
+      "moveset": [
+        "stormthrow",
+        "bulkup",
+        "knockoff",
+        "rockslide"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    },
+    {
+      "species": "heracross",
+      "level": 40,
+      "nature": "jolly",
+      "ability": "guts",
+      "moveset": [
+        "closecombat",
+        "megahorn",
+        "earthquake",
+        "rockblast"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    },
+    {
+      "species": "hariyama",
+      "level": 42,
+      "nature": "adamant",
+      "ability": "thickfat",
+      "moveset": [
+        "closecombat",
+        "knockoff",
+        "bulletpunch",
+        "fakeout"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    }
+  ]
+}

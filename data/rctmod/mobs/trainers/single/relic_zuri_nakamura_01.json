@@ -1,0 +1,12 @@
+{
+  "type": "normal",
+  "series": [
+    "steamos_relic"
+  ],
+  "requiredDefeats": [
+    [
+      "relic_prof_anselm_dray_01"
+    ]
+  ],
+  "optional": false
+}

@@ -1,0 +1,121 @@
+{
+  "name": "Mira Okoye",
+  "identity": "Mira Okoye",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.3
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "tyrantrum",
+      "level": 72,
+      "nature": "adamant",
+      "ability": "strongjaw",
+      "moveset": [
+        "dragonclaw",
+        "crunch",
+        "rockslide",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "atk": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "probopass",
+      "level": 72,
+      "nature": "calm",
+      "ability": "sturdy",
+      "moveset": [
+        "powergem",
+        "flashcannon",
+        "thunderwave",
+        "stealthrock"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "spd": 100
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "archeops",
+      "level": 72,
+      "nature": "jolly",
+      "ability": "defeatist",
+      "moveset": [
+        "rockslide",
+        "acrobatics",
+        "earthquake",
+        "uturn"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "atk": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "focus_sash"
+      ]
+    },
+    {
+      "species": "sylveon",
+      "level": 74,
+      "nature": "modest",
+      "ability": "pixilate",
+      "moveset": [
+        "hypervoice",
+        "shadowball",
+        "psyshock",
+        "calmmind"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "spa": 100
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    }
+  ]
+}

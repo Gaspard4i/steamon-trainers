@@ -1,0 +1,181 @@
+{
+  "name": "King of the Wooloo",
+  "identity": "King of the Wooloo",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.15
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "wyrdeer",
+      "level": 134,
+      "nature": "jolly",
+      "ability": "intimidate",
+      "moveset": [
+        "psyshieldbash",
+        "megahorn",
+        "earthquake",
+        "doubleedge"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "mudsdale",
+      "level": 134,
+      "nature": "impish",
+      "ability": "stamina",
+      "moveset": [
+        "highhorsepower",
+        "heavyslam",
+        "rockslide",
+        "rest"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {
+        "hp": 252,
+        "def": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "tauros",
+      "level": 134,
+      "nature": "jolly",
+      "ability": "intimidate",
+      "moveset": [
+        "bodyslam",
+        "earthquake",
+        "zenheadbutt",
+        "closecombat"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "choice_band"
+      ]
+    },
+    {
+      "species": "gogoat",
+      "level": 134,
+      "nature": "adamant",
+      "ability": "sapsipper",
+      "moveset": [
+        "hornleech",
+        "bulkup",
+        "earthquake",
+        "milkdrink"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "ampharos",
+      "level": 134,
+      "nature": "modest",
+      "ability": "static",
+      "moveset": [
+        "voltswitch",
+        "dragonpulse",
+        "focusblast",
+        "thunderwave"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {
+        "spa": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "mega_showdown:ampharosite"
+      ]
+    },
+    {
+      "species": "dubwool",
+      "level": 136,
+      "nature": "impish",
+      "ability": "fluffy",
+      "moveset": [
+        "doubleedge",
+        "cottonguard",
+        "swordsdance",
+        "rest"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "def": 4
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    }
+  ]
+}

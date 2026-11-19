@@ -1,0 +1,124 @@
+{
+  "name": "Dr. Ingrid Valk",
+  "identity": "Dr. Ingrid Valk",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.3
+    }
+  },
+  "battleFormat": "GEN_9_DOUBLES",
+  "team": [
+    {
+      "species": "claydol",
+      "level": 76,
+      "nature": "calm",
+      "ability": "levitate",
+      "moveset": [
+        "reflect",
+        "lightscreen",
+        "earthpower",
+        "rapidspin"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "spd": 252
+      },
+      "heldItem": [
+        "light_clay"
+      ]
+    },
+    {
+      "species": "rotom",
+      "level": 76,
+      "nature": "modest",
+      "ability": "levitate",
+      "moveset": [
+        "hydropump",
+        "thunderbolt",
+        "willowisp",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "spa": 252
+      },
+      "aspects": [
+        "wash-appliance"
+      ],
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "orbeetle",
+      "level": 76,
+      "nature": "modest",
+      "ability": "swarm",
+      "moveset": [
+        "psychic",
+        "bugbuzz",
+        "helpinghand",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "spa": 252
+      },
+      "heldItem": [
+        "psychic_seed"
+      ]
+    },
+    {
+      "species": "jolteon",
+      "level": 78,
+      "nature": "timid",
+      "ability": "voltabsorb",
+      "moveset": [
+        "thunderbolt",
+        "voltswitch",
+        "shadowball",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "spa": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "focus_sash"
+      ]
+    }
+  ]
+}

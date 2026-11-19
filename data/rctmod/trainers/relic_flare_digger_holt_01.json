@@ -1,0 +1,125 @@
+{
+  "name": "Flare Digger Holt",
+  "identity": "Flare Digger Holt",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.2
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "camerupt",
+      "level": 78,
+      "nature": "modest",
+      "ability": "solidrock",
+      "moveset": [
+        "eruption",
+        "earthpower",
+        "stealthrock",
+        "rockslide"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "spa": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "charti_berry"
+      ]
+    },
+    {
+      "species": "golem",
+      "level": 78,
+      "nature": "adamant",
+      "ability": "sturdy",
+      "moveset": [
+        "stoneedge",
+        "earthquake",
+        "explosion",
+        "stealthrock"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "rhyperior",
+      "level": 78,
+      "nature": "adamant",
+      "ability": "solidrock",
+      "moveset": [
+        "rockblast",
+        "earthquake",
+        "megahorn",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "krookodile",
+      "level": 80,
+      "nature": "jolly",
+      "ability": "intimidate",
+      "moveset": [
+        "earthquake",
+        "crunch",
+        "stoneedge",
+        "pursuit"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "choice_band"
+      ]
+    }
+  ]
+}

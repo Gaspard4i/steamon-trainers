@@ -1,0 +1,125 @@
+{
+  "name": "Ulda",
+  "identity": "Ulda",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.3
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "mightyena",
+      "level": 59,
+      "nature": "jolly",
+      "ability": "intimidate",
+      "moveset": [
+        "crunch",
+        "playrough",
+        "psychicfangs",
+        "suckerpunch"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "atk": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "zangoose",
+      "level": 59,
+      "nature": "adamant",
+      "ability": "toxicboost",
+      "moveset": [
+        "facade",
+        "closecombat",
+        "quickattack",
+        "knockoff"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "atk": 100,
+        "def": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "toxic_orb"
+      ]
+    },
+    {
+      "species": "pangoro",
+      "level": 59,
+      "nature": "adamant",
+      "ability": "scrappy",
+      "moveset": [
+        "hammerarm",
+        "knockoff",
+        "bulletpunch",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "atk": 100,
+        "spd": 100
+      },
+      "heldItem": [
+        "choice_band"
+      ]
+    },
+    {
+      "species": "ursaring",
+      "level": 61,
+      "nature": "adamant",
+      "ability": "guts",
+      "moveset": [
+        "facade",
+        "closecombat",
+        "crunch",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "atk": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "flame_orb"
+      ]
+    }
+  ]
+}

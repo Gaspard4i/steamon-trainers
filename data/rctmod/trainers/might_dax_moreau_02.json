@@ -1,0 +1,94 @@
+{
+  "name": "Dax Moreau",
+  "identity": "Dax Moreau",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.35
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "pawniard",
+      "level": 49,
+      "nature": "adamant",
+      "ability": "defiant",
+      "moveset": [
+        "suckerpunch",
+        "ironhead",
+        "nightslash",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 14,
+        "atk": 14,
+        "def": 14,
+        "spa": 14,
+        "spd": 14,
+        "spe": 14
+      },
+      "evs": {
+        "atk": 8,
+        "spe": 8
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "scizor",
+      "level": 49,
+      "nature": "adamant",
+      "ability": "technician",
+      "moveset": [
+        "bulletpunch",
+        "xscissor",
+        "swordsdance",
+        "quickattack"
+      ],
+      "ivs": {
+        "hp": 14,
+        "atk": 14,
+        "def": 14,
+        "spa": 14,
+        "spd": 14,
+        "spe": 14
+      },
+      "evs": {
+        "atk": 8,
+        "hp": 8
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "typhlosion",
+      "level": 51,
+      "nature": "modest",
+      "ability": "blaze",
+      "moveset": [
+        "flamethrower",
+        "eruption",
+        "focusblast",
+        "swift"
+      ],
+      "ivs": {
+        "hp": 14,
+        "atk": 14,
+        "def": 14,
+        "spa": 14,
+        "spd": 14,
+        "spe": 14
+      },
+      "evs": {
+        "spa": 8,
+        "spe": 8
+      },
+      "heldItem": [
+        "oran_berry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "lanugo",
+  "series": [
+    "steamos_relic"
+  ],
+  "requiredDefeats": [
+    [
+      "relic_dax_moreau_01"
+    ]
+  ],
+  "optional": false
+}

@@ -1,0 +1,12 @@
+{
+  "type": "rival",
+  "series": [
+    "steamos_might"
+  ],
+  "requiredDefeats": [
+    [
+      "might_dax_moreau_03"
+    ]
+  ],
+  "optional": false
+}

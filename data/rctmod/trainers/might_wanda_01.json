@@ -1,0 +1,85 @@
+{
+  "name": "Wanda",
+  "identity": "Wanda",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.35
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "marowak",
+      "level": 32,
+      "nature": "adamant",
+      "ability": "rockhead",
+      "moveset": [
+        "bonemerang",
+        "rockslide",
+        "earthquake",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "hard_stone"
+      ]
+    },
+    {
+      "species": "gurdurr",
+      "level": 32,
+      "nature": "brave",
+      "ability": "guts",
+      "moveset": [
+        "lowsweep",
+        "rockslide",
+        "bulkup",
+        "machpunch"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    },
+    {
+      "species": "lairon",
+      "level": 34,
+      "nature": "impish",
+      "ability": "sturdy",
+      "moveset": [
+        "ironhead",
+        "rockslide",
+        "metalclaw",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    }
+  ]
+}

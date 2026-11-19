@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "defeat_relic_mira_okoye_02": {
+      "trigger": "rctmod:defeat_count",
+      "conditions": {
+        "count": 1,
+        "entity": {
+          "type": null
+        },
+        "trainer_ids": [
+          "relic_mira_okoye_02"
+        ],
+        "trainer_type": null
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": null,
+    "description": {
+      "text": "Defeat Mira Okoye."
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "id": "cobblemon:poke_ball"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Mira Okoye"
+    }
+  },
+  "requirements": [
+    [
+      "defeat_relic_mira_okoye_02"
+    ]
+  ]
+}

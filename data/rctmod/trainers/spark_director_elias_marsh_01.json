@@ -1,0 +1,128 @@
+{
+  "name": "Director Elias Marsh",
+  "identity": "Director Elias Marsh",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.2
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "magnezone",
+      "level": 100,
+      "nature": "modest",
+      "ability": "magnetpull",
+      "moveset": [
+        "thunderbolt",
+        "flashcannon",
+        "voltswitch",
+        "irondefense"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 4,
+        "spa": 252
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "excadrill",
+      "level": 100,
+      "nature": "jolly",
+      "ability": "sandrush",
+      "moveset": [
+        "earthquake",
+        "ironhead",
+        "rockslide",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "electivire",
+      "level": 100,
+      "nature": "jolly",
+      "ability": "motordrive",
+      "moveset": [
+        "wildcharge",
+        "icepunch",
+        "crosschop",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "expert_belt"
+      ]
+    },
+    {
+      "species": "kingambit",
+      "level": 102,
+      "nature": "adamant",
+      "ability": "defiant",
+      "moveset": [
+        "kowtowcleave",
+        "suckerpunch",
+        "ironhead",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "gimmicks": {
+        "tera": "dark"
+      },
+      "heldItem": [
+        "black_glasses"
+      ]
+    }
+  ]
+}

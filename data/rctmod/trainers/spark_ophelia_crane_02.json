@@ -1,0 +1,186 @@
+{
+  "name": "Ophelia Crane",
+  "identity": "Ophelia Crane",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.15
+    }
+  },
+  "battleFormat": "GEN_9_DOUBLES",
+  "team": [
+    {
+      "species": "spiritomb",
+      "level": 111,
+      "nature": "calm",
+      "ability": "infiltrator",
+      "moveset": [
+        "snarl",
+        "foulplay",
+        "willowisp",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 4,
+        "spd": 252
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "mamoswine",
+      "level": 111,
+      "nature": "jolly",
+      "ability": "thickfat",
+      "moveset": [
+        "iciclecrash",
+        "earthquake",
+        "iceshard",
+        "knockoff"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "choice_band"
+      ]
+    },
+    {
+      "species": "mrrime",
+      "level": 111,
+      "nature": "bold",
+      "ability": "screencleaner",
+      "moveset": [
+        "freezedry",
+        "psychic",
+        "trickroom",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "spa": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "ninetales",
+      "level": 111,
+      "nature": "timid",
+      "ability": "snowwarning",
+      "moveset": [
+        "blizzard",
+        "moonblast",
+        "auroraveil",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "spa": 252,
+        "spd": 4
+      },
+      "aspects": [
+        "alolan"
+      ],
+      "heldItem": [
+        "light_clay"
+      ]
+    },
+    {
+      "species": "reuniclus",
+      "level": 111,
+      "nature": "quiet",
+      "ability": "magicguard",
+      "moveset": [
+        "psychic",
+        "focusblast",
+        "trickroom",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 0
+      },
+      "evs": {
+        "hp": 252,
+        "spa": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "hatterene",
+      "level": 113,
+      "nature": "quiet",
+      "ability": "magicbounce",
+      "moveset": [
+        "dazzlinggleam",
+        "psychic",
+        "trickroom",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 0
+      },
+      "evs": {
+        "hp": 252,
+        "spa": 252,
+        "spd": 4
+      },
+      "gimmicks": {
+        "tera": "fairy"
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    }
+  ]
+}

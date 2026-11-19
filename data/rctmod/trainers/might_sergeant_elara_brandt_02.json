@@ -1,0 +1,184 @@
+{
+  "name": "Sergeant Elara Brandt",
+  "identity": "Sergeant Elara Brandt",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.1
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "hawlucha",
+      "level": 162,
+      "nature": "jolly",
+      "ability": "unburden",
+      "moveset": [
+        "closecombat",
+        "acrobatics",
+        "swordsdance",
+        "roost"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 4,
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "grassy_seed"
+      ]
+    },
+    {
+      "species": "conkeldurr",
+      "level": 162,
+      "nature": "adamant",
+      "ability": "guts",
+      "moveset": [
+        "machpunch",
+        "drainpunch",
+        "knockoff",
+        "facade"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "flame_orb"
+      ]
+    },
+    {
+      "species": "excadrill",
+      "level": 162,
+      "nature": "jolly",
+      "ability": "moldbreaker",
+      "moveset": [
+        "earthquake",
+        "ironhead",
+        "rapidspin",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 4,
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "mamoswine",
+      "level": 162,
+      "nature": "adamant",
+      "ability": "thickfat",
+      "moveset": [
+        "iciclecrash",
+        "earthquake",
+        "iceshard",
+        "knockoff"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 4,
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "choice_band"
+      ]
+    },
+    {
+      "species": "metagross",
+      "level": 162,
+      "nature": "adamant",
+      "ability": "clearbody",
+      "moveset": [
+        "meteormash",
+        "zenheadbutt",
+        "earthquake",
+        "hammerarm"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "assault_vest"
+      ]
+    },
+    {
+      "species": "kingambit",
+      "level": 164,
+      "nature": "adamant",
+      "ability": "defiant",
+      "moveset": [
+        "kowtowcleave",
+        "suckerpunch",
+        "ironhead",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "gimmicks": {
+        "tera": "dark"
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    }
+  ]
+}

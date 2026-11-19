@@ -1,0 +1,13 @@
+{
+  "type": "e4",
+  "series": [
+    "steamos_relic"
+  ],
+  "requiredDefeats": [
+    [
+      "relic_marlo_02"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

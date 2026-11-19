@@ -1,0 +1,156 @@
+{
+  "name": "Flare Grunt Dross",
+  "identity": "Flare Grunt Dross",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.2
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "garbodor",
+      "level": 95,
+      "nature": "adamant",
+      "ability": "aftermath",
+      "moveset": [
+        "gunkshot",
+        "drainpunch",
+        "toxicspikes",
+        "haze"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "black_sludge"
+      ]
+    },
+    {
+      "species": "muk",
+      "level": 95,
+      "nature": "adamant",
+      "ability": "poisontouch",
+      "moveset": [
+        "poisonjab",
+        "knockoff",
+        "shadowsneak",
+        "drainpunch"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "aspects": [
+        "alolan"
+      ],
+      "heldItem": [
+        "black_sludge"
+      ]
+    },
+    {
+      "species": "toxicroak",
+      "level": 95,
+      "nature": "jolly",
+      "ability": "dryskin",
+      "moveset": [
+        "gunkshot",
+        "drainpunch",
+        "suckerpunch",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "scrafty",
+      "level": 95,
+      "nature": "impish",
+      "ability": "intimidate",
+      "moveset": [
+        "dragondance",
+        "closecombat",
+        "knockoff",
+        "drainpunch"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "drapion",
+      "level": 97,
+      "nature": "jolly",
+      "ability": "sniper",
+      "moveset": [
+        "crosspoison",
+        "knockoff",
+        "xscissor",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "choice_band"
+      ]
+    }
+  ]
+}

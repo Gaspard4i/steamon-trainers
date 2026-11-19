@@ -1,0 +1,94 @@
+{
+  "name": "Elder Pax",
+  "identity": "Elder Pax",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.3
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "meganium",
+      "level": 65,
+      "nature": "bold",
+      "ability": "overgrow",
+      "moveset": [
+        "gigadrain",
+        "dragontail",
+        "aromatherapy",
+        "synthesis"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "spd": 100
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "whimsicott",
+      "level": 65,
+      "nature": "timid",
+      "ability": "prankster",
+      "moveset": [
+        "moonblast",
+        "leechseed",
+        "encore",
+        "tailwind"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "spa": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "focus_sash"
+      ]
+    },
+    {
+      "species": "slowking",
+      "level": 67,
+      "nature": "bold",
+      "ability": "regenerator",
+      "moveset": [
+        "scald",
+        "psychic",
+        "slackoff",
+        "calmmind"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "spa": 100
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "name": "Prof. Anselm Dray",
+  "identity": "Prof. Anselm Dray",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.1
+    }
+  },
+  "battleFormat": "GEN_9_DOUBLES",
+  "team": [
+    {
+      "species": "omastar",
+      "level": 162,
+      "nature": "modest",
+      "ability": "weakarmor",
+      "moveset": [
+        "muddywater",
+        "icebeam",
+        "earthpower",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 4,
+        "spa": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "focus_sash"
+      ]
+    },
+    {
+      "species": "cradily",
+      "level": 162,
+      "nature": "calm",
+      "ability": "stormdrain",
+      "moveset": [
+        "gigadrain",
+        "stealthrock",
+        "recover",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 4,
+        "spd": 252
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "carracosta",
+      "level": 162,
+      "nature": "adamant",
+      "ability": "sturdy",
+      "moveset": [
+        "waterfall",
+        "rockslide",
+        "aquajet",
+        "knockoff"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "def": 4
+      },
+      "heldItem": [
+        "assault_vest"
+      ]
+    },
+    {
+      "species": "kabutops",
+      "level": 162,
+      "nature": "jolly",
+      "ability": "swiftswim",
+      "moveset": [
+        "liquidation",
+        "stoneedge",
+        "aquajet",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "def": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "tyrantrum",
+      "level": 162,
+      "nature": "adamant",
+      "ability": "strongjaw",
+      "moveset": [
+        "headsmash",
+        "crunch",
+        "earthquake",
+        "dragonclaw"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spe": 4
+      },
+      "heldItem": [
+        "choice_band"
+      ]
+    },
+    {
+      "species": "aerodactyl",
+      "level": 164,
+      "nature": "jolly",
+      "ability": "unnerve",
+      "moveset": [
+        "rockslide",
+        "dualwingbeat",
+        "tailwind",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 4,
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "mega_showdown:aerodactylite"
+      ]
+    }
+  ]
+}

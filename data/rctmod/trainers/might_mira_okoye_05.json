@@ -1,0 +1,153 @@
+{
+  "name": "Mira Okoye",
+  "identity": "Mira Okoye",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.1
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "kleavor",
+      "level": 198,
+      "nature": "jolly",
+      "ability": "sharpness",
+      "moveset": [
+        "xscissor",
+        "stoneaxe",
+        "closecombat",
+        "uturn"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "def": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "choice_band"
+      ]
+    },
+    {
+      "species": "tyrantrum",
+      "level": 198,
+      "nature": "jolly",
+      "ability": "strongjaw",
+      "moveset": [
+        "dragondance",
+        "dragonclaw",
+        "headsmash",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "def": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "lum_berry"
+      ]
+    },
+    {
+      "species": "archeops",
+      "level": 198,
+      "nature": "jolly",
+      "ability": "defeatist",
+      "moveset": [
+        "acrobatics",
+        "stoneedge",
+        "earthquake",
+        "uturn"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "def": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "garchomp",
+      "level": 198,
+      "nature": "impish",
+      "ability": "roughskin",
+      "moveset": [
+        "earthquake",
+        "dragonclaw",
+        "stealthrock",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 4,
+        "def": 252
+      },
+      "heldItem": [
+        "rocky_helmet"
+      ]
+    },
+    {
+      "species": "sylveon",
+      "level": 200,
+      "nature": "modest",
+      "ability": "pixilate",
+      "moveset": [
+        "hypervoice",
+        "psyshock",
+        "shadowball",
+        "calmmind"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "spa": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    }
+  ]
+}

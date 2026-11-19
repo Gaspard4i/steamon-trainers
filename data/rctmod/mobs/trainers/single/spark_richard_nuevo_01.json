@@ -1,0 +1,16 @@
+{
+  "type": "leader",
+  "series": [
+    "steamos_spark"
+  ],
+  "requiredDefeats": [
+    [
+      "spark_dr_ingrid_valk_02"
+    ],
+    [
+      "spark_tomas_reyes_02"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

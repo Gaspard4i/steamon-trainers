@@ -1,0 +1,94 @@
+{
+  "name": "Mira Okoye",
+  "identity": "Mira Okoye",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.3
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "aerodactyl",
+      "level": 74,
+      "nature": "jolly",
+      "ability": "pressure",
+      "moveset": [
+        "rockslide",
+        "wingattack",
+        "bite",
+        "ancientpower"
+      ],
+      "ivs": {
+        "hp": 14,
+        "atk": 14,
+        "def": 14,
+        "spa": 14,
+        "spd": 14,
+        "spe": 14
+      },
+      "evs": {
+        "atk": 8,
+        "spe": 8
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "archeops",
+      "level": 74,
+      "nature": "naive",
+      "ability": "defeatist",
+      "moveset": [
+        "rockslide",
+        "acrobatics",
+        "crunch",
+        "uturn"
+      ],
+      "ivs": {
+        "hp": 14,
+        "atk": 14,
+        "def": 14,
+        "spa": 14,
+        "spd": 14,
+        "spe": 14
+      },
+      "evs": {
+        "atk": 8,
+        "spe": 8
+      },
+      "heldItem": [
+        "oran_berry"
+      ]
+    },
+    {
+      "species": "sylveon",
+      "level": 76,
+      "nature": "modest",
+      "ability": "pixilate",
+      "moveset": [
+        "hypervoice",
+        "shadowball",
+        "quickattack",
+        "calmmind"
+      ],
+      "ivs": {
+        "hp": 14,
+        "atk": 14,
+        "def": 14,
+        "spa": 14,
+        "spd": 14,
+        "spe": 14
+      },
+      "evs": {
+        "hp": 8,
+        "spa": 8
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    }
+  ]
+}

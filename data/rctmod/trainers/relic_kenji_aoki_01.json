@@ -1,0 +1,121 @@
+{
+  "name": "Kenji Aoki",
+  "identity": "Kenji Aoki",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.1
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "hitmonchan",
+      "level": 144,
+      "nature": "jolly",
+      "ability": "ironfist",
+      "moveset": [
+        "closecombat",
+        "machpunch",
+        "icepunch",
+        "thunderpunch"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "hawlucha",
+      "level": 144,
+      "nature": "jolly",
+      "ability": "unburden",
+      "moveset": [
+        "closecombat",
+        "acrobatics",
+        "swordsdance",
+        "roost"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "grassy_seed"
+      ]
+    },
+    {
+      "species": "throh",
+      "level": 144,
+      "nature": "adamant",
+      "ability": "guts",
+      "moveset": [
+        "stormthrow",
+        "knockoff",
+        "bulkup",
+        "rest"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "sawk",
+      "level": 146,
+      "nature": "jolly",
+      "ability": "moldbreaker",
+      "moveset": [
+        "closecombat",
+        "knockoff",
+        "icepunch",
+        "stoneedge"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "choice_band"
+      ]
+    }
+  ]
+}

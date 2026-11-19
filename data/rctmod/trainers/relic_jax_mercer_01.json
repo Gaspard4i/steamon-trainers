@@ -1,0 +1,75 @@
+{
+  "name": "Jax Mercer",
+  "identity": "Jax Mercer",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.4
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "diglett",
+      "level": 21,
+      "nature": "hardy",
+      "ability": "arenatrap",
+      "moveset": [
+        "mudslap",
+        "sandattack",
+        "scratch",
+        "magnitude"
+      ],
+      "ivs": {
+        "hp": 14,
+        "atk": 14,
+        "def": 14,
+        "spa": 14,
+        "spd": 14,
+        "spe": 14
+      },
+      "evs": {
+        "hp": 0,
+        "atk": 0,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "heldItem": [
+        "soft_sand"
+      ]
+    },
+    {
+      "species": "onix",
+      "level": 23,
+      "nature": "hardy",
+      "ability": "rockhead",
+      "moveset": [
+        "rockthrow",
+        "bind",
+        "rage",
+        "irontail"
+      ],
+      "ivs": {
+        "hp": 14,
+        "atk": 14,
+        "def": 14,
+        "spa": 14,
+        "spd": 14,
+        "spe": 14
+      },
+      "evs": {
+        "hp": 0,
+        "atk": 0,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "heldItem": [
+        "oran_berry"
+      ]
+    }
+  ]
+}

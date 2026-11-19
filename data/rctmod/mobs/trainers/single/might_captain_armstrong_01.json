@@ -1,0 +1,16 @@
+{
+  "type": "leader",
+  "series": [
+    "steamos_might"
+  ],
+  "requiredDefeats": [
+    [
+      "might_sergeant_elara_brandt_02"
+    ],
+    [
+      "might_kenji_aoki_02"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

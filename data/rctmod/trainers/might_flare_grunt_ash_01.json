@@ -1,0 +1,153 @@
+{
+  "name": "Flare Grunt Ash",
+  "identity": "Flare Grunt Ash",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.2
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "houndoom",
+      "level": 93,
+      "nature": "timid",
+      "ability": "flashfire",
+      "moveset": [
+        "fireblast",
+        "darkpulse",
+        "sludgebomb",
+        "nastyplot"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "spa": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "skuntank",
+      "level": 93,
+      "nature": "adamant",
+      "ability": "aftermath",
+      "moveset": [
+        "poisonjab",
+        "crunch",
+        "fireblast",
+        "taunt"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "black_sludge"
+      ]
+    },
+    {
+      "species": "crobat",
+      "level": 93,
+      "nature": "jolly",
+      "ability": "infiltrator",
+      "moveset": [
+        "bravebird",
+        "crosspoison",
+        "uturn",
+        "roost"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "talonflame",
+      "level": 93,
+      "nature": "jolly",
+      "ability": "galewings",
+      "moveset": [
+        "bravebird",
+        "flareblitz",
+        "swordsdance",
+        "roost"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "sharp_beak"
+      ]
+    },
+    {
+      "species": "typhlosion",
+      "level": 95,
+      "nature": "timid",
+      "ability": "blaze",
+      "moveset": [
+        "eruption",
+        "focusblast",
+        "extrasensory",
+        "flamethrower"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "spa": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "choice_scarf"
+      ]
+    }
+  ]
+}

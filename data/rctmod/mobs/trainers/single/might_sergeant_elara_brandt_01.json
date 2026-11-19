@@ -1,0 +1,12 @@
+{
+  "type": "normal",
+  "series": [
+    "steamos_might"
+  ],
+  "requiredDefeats": [
+    [
+      "might_mira_okoye_02"
+    ]
+  ],
+  "optional": false
+}

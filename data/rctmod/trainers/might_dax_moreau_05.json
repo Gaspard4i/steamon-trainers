@@ -1,0 +1,153 @@
+{
+  "name": "Dax Moreau",
+  "identity": "Dax Moreau",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.15
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "scizor",
+      "level": 103,
+      "nature": "adamant",
+      "ability": "technician",
+      "moveset": [
+        "bulletpunch",
+        "uturn",
+        "knockoff",
+        "closecombat"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "choice_band"
+      ]
+    },
+    {
+      "species": "gallade",
+      "level": 103,
+      "nature": "jolly",
+      "ability": "justified",
+      "moveset": [
+        "sacredsword",
+        "psychocut",
+        "leafblade",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "cinderace",
+      "level": 103,
+      "nature": "jolly",
+      "ability": "libero",
+      "moveset": [
+        "pyroball",
+        "highjumpkick",
+        "uturn",
+        "suckerpunch"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "heavy_duty_boots"
+      ]
+    },
+    {
+      "species": "kingambit",
+      "level": 103,
+      "nature": "adamant",
+      "ability": "defiant",
+      "moveset": [
+        "kowtowcleave",
+        "suckerpunch",
+        "ironhead",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "black_glasses"
+      ]
+    },
+    {
+      "species": "typhlosion",
+      "level": 105,
+      "nature": "timid",
+      "ability": "flashfire",
+      "moveset": [
+        "eruption",
+        "fireblast",
+        "focusblast",
+        "extrasensory"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "spa": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "charcoal_stick"
+      ]
+    }
+  ]
+}

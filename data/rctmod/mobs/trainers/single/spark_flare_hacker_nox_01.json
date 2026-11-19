@@ -1,0 +1,12 @@
+{
+  "type": "team_flare",
+  "series": [
+    "steamos_spark"
+  ],
+  "requiredDefeats": [
+    [
+      "spark_tomas_reyes_01"
+    ]
+  ],
+  "optional": false
+}

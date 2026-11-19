@@ -1,0 +1,13 @@
+{
+  "type": "normal",
+  "series": [
+    "steamos_relic"
+  ],
+  "requiredDefeats": [
+    [
+      "relic_a_z_01"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

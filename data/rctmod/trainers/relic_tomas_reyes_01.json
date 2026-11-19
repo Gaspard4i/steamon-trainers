@@ -1,0 +1,97 @@
+{
+  "name": "Tomas Reyes",
+  "identity": "Tomas Reyes",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.1
+    }
+  },
+  "battleFormat": "GEN_9_DOUBLES",
+  "team": [
+    {
+      "species": "probopass",
+      "level": 156,
+      "nature": "bold",
+      "ability": "sturdy",
+      "moveset": [
+        "powergem",
+        "thunderbolt",
+        "voltswitch",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "def": 100,
+        "spa": 100
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "klinklang",
+      "level": 156,
+      "nature": "hasty",
+      "ability": "clearbody",
+      "moveset": [
+        "geargrind",
+        "wildcharge",
+        "shiftgear",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "atk": 100,
+        "spa": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "magnezone",
+      "level": 158,
+      "nature": "modest",
+      "ability": "magnetpull",
+      "moveset": [
+        "thunderbolt",
+        "flashcannon",
+        "voltswitch",
+        "discharge"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "spa": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "choice_specs"
+      ]
+    }
+  ]
+}

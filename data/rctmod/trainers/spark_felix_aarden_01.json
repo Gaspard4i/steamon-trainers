@@ -1,0 +1,88 @@
+{
+  "name": "Felix Aarden",
+  "identity": "Felix Aarden",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.35
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "rotom",
+      "level": 45,
+      "nature": "modest",
+      "ability": "levitate",
+      "moveset": [
+        "hydropump",
+        "thunderbolt",
+        "willowisp",
+        "voltswitch"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "aspects": [
+        "wash-appliance"
+      ],
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "bronzong",
+      "level": 45,
+      "nature": "sassy",
+      "ability": "levitate",
+      "moveset": [
+        "gyroball",
+        "psychic",
+        "reflect",
+        "hypnosis"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    },
+    {
+      "species": "magnezone",
+      "level": 47,
+      "nature": "modest",
+      "ability": "sturdy",
+      "moveset": [
+        "thunderbolt",
+        "flashcannon",
+        "thunderwave",
+        "triattack"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    }
+  ]
+}

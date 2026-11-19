@@ -1,0 +1,181 @@
+{
+  "name": "Lysandre",
+  "identity": "Lysandre",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.15
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "pyroar",
+      "level": 125,
+      "nature": "timid",
+      "ability": "unnerve",
+      "moveset": [
+        "fireblast",
+        "hypervoice",
+        "willowisp",
+        "overheat"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "spa": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "honchkrow",
+      "level": 125,
+      "nature": "adamant",
+      "ability": "moxie",
+      "moveset": [
+        "bravebird",
+        "suckerpunch",
+        "superpower",
+        "heatwave"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "choice_band"
+      ]
+    },
+    {
+      "species": "chandelure",
+      "level": 125,
+      "nature": "timid",
+      "ability": "flashfire",
+      "moveset": [
+        "shadowball",
+        "fireblast",
+        "energyball",
+        "trick"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "spa": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "choice_specs"
+      ]
+    },
+    {
+      "species": "weavile",
+      "level": 125,
+      "nature": "jolly",
+      "ability": "pressure",
+      "moveset": [
+        "iceshard",
+        "knockoff",
+        "tripleaxel",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "mienshao",
+      "level": 125,
+      "nature": "jolly",
+      "ability": "regenerator",
+      "moveset": [
+        "highjumpkick",
+        "uturn",
+        "knockoff",
+        "stoneedge"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "choice_scarf"
+      ]
+    },
+    {
+      "species": "gyarados",
+      "level": 127,
+      "nature": "adamant",
+      "ability": "intimidate",
+      "moveset": [
+        "waterfall",
+        "crunch",
+        "dragondance",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "mega_showdown:gyaradosite"
+      ]
+    }
+  ]
+}

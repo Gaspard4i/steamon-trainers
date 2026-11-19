@@ -1,0 +1,61 @@
+{
+  "name": "Ranger Isa",
+  "identity": "Ranger Isa",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.35
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "mightyena",
+      "level": 28,
+      "nature": "adamant",
+      "ability": "intimidate",
+      "moveset": [
+        "crunch",
+        "takedown",
+        "howl",
+        "roar"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    },
+    {
+      "species": "luxray",
+      "level": 30,
+      "nature": "jolly",
+      "ability": "intimidate",
+      "moveset": [
+        "spark",
+        "bite",
+        "icefang",
+        "leer"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    }
+  ]
+}

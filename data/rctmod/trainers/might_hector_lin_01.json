@@ -1,0 +1,125 @@
+{
+  "name": "Hector Lin",
+  "identity": "Hector Lin",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.2
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "hariyama",
+      "level": 100,
+      "nature": "adamant",
+      "ability": "guts",
+      "moveset": [
+        "facade",
+        "closecombat",
+        "knockoff",
+        "fakeout"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "flame_orb"
+      ]
+    },
+    {
+      "species": "snorlax",
+      "level": 100,
+      "nature": "adamant",
+      "ability": "thickfat",
+      "moveset": [
+        "bodyslam",
+        "earthquake",
+        "curse",
+        "rest"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "conkeldurr",
+      "level": 100,
+      "nature": "adamant",
+      "ability": "ironfist",
+      "moveset": [
+        "machpunch",
+        "drainpunch",
+        "icepunch",
+        "knockoff"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "assault_vest"
+      ]
+    },
+    {
+      "species": "machamp",
+      "level": 102,
+      "nature": "adamant",
+      "ability": "noguard",
+      "moveset": [
+        "dynamicpunch",
+        "bulletpunch",
+        "stoneedge",
+        "knockoff"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "def": 4
+      },
+      "heldItem": [
+        "choice_band"
+      ]
+    }
+  ]
+}

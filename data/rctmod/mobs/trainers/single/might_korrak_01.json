@@ -1,0 +1,12 @@
+{
+  "type": "lanugo",
+  "series": [
+    "steamos_might"
+  ],
+  "requiredDefeats": [
+    [
+      "might_king_of_the_wooloo_01"
+    ]
+  ],
+  "optional": false
+}

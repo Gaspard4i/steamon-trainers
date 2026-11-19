@@ -1,0 +1,13 @@
+{
+  "type": "e4",
+  "series": [
+    "steamos_might"
+  ],
+  "requiredDefeats": [
+    [
+      "might_marlo_02"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

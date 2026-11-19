@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "defeat_relic_sael_01": {
+      "trigger": "rctmod:defeat_count",
+      "conditions": {
+        "count": 1,
+        "entity": {
+          "type": null
+        },
+        "trainer_ids": [
+          "relic_sael_01"
+        ],
+        "trainer_type": null
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": null,
+    "description": {
+      "text": "Defeat Sael."
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "id": "cobblemon:poke_ball"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Sael"
+    }
+  },
+  "requirements": [
+    [
+      "defeat_relic_sael_01"
+    ]
+  ]
+}

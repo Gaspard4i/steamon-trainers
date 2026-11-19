@@ -1,0 +1,12 @@
+{
+  "type": "team_flare",
+  "series": [
+    "steamos_might"
+  ],
+  "requiredDefeats": [
+    [
+      "might_kenji_aoki_01"
+    ]
+  ],
+  "optional": false
+}

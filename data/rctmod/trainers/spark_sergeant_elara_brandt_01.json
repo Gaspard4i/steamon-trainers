@@ -1,0 +1,125 @@
+{
+  "name": "Sergeant Elara Brandt",
+  "identity": "Sergeant Elara Brandt",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.1
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "hariyama",
+      "level": 150,
+      "nature": "adamant",
+      "ability": "guts",
+      "moveset": [
+        "facade",
+        "closecombat",
+        "knockoff",
+        "bulletpunch"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "atk": 100,
+        "def": 100
+      },
+      "heldItem": [
+        "flame_orb"
+      ]
+    },
+    {
+      "species": "mudsdale",
+      "level": 150,
+      "nature": "impish",
+      "ability": "stamina",
+      "moveset": [
+        "highhorsepower",
+        "heavyslam",
+        "rockslide",
+        "rest"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "atk": 100,
+        "def": 100
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "heracross",
+      "level": 150,
+      "nature": "adamant",
+      "ability": "guts",
+      "moveset": [
+        "megahorn",
+        "closecombat",
+        "knockoff",
+        "rockblast"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "atk": 100,
+        "def": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "choice_band"
+      ]
+    },
+    {
+      "species": "bisharp",
+      "level": 152,
+      "nature": "adamant",
+      "ability": "defiant",
+      "moveset": [
+        "suckerpunch",
+        "ironhead",
+        "knockoff",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "atk": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "black_glasses"
+      ]
+    }
+  ]
+}

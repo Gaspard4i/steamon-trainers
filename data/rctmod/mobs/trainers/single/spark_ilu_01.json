@@ -1,0 +1,12 @@
+{
+  "type": "lanugo",
+  "series": [
+    "steamos_spark"
+  ],
+  "requiredDefeats": [
+    [
+      "spark_ekayon_01"
+    ]
+  ],
+  "optional": false
+}

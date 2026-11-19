@@ -1,0 +1,13 @@
+{
+  "type": "team_flare",
+  "series": [
+    "steamos_relic"
+  ],
+  "requiredDefeats": [
+    [
+      "relic_lysandre_01"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

@@ -1,0 +1,13 @@
+{
+  "type": "normal",
+  "series": [
+    "steamos_spark"
+  ],
+  "requiredDefeats": [
+    [
+      "spark_a_z_02"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

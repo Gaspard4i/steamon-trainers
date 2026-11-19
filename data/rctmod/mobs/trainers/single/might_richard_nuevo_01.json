@@ -1,0 +1,16 @@
+{
+  "type": "leader",
+  "series": [
+    "steamos_might"
+  ],
+  "requiredDefeats": [
+    [
+      "might_dr_ingrid_valk_01"
+    ],
+    [
+      "might_tomas_reyes_01"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

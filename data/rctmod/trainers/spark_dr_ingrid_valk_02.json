@@ -1,0 +1,178 @@
+{
+  "name": "Dr. Ingrid Valk",
+  "identity": "Dr. Ingrid Valk",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.1
+    }
+  },
+  "battleFormat": "GEN_9_DOUBLES",
+  "team": [
+    {
+      "species": "hatterene",
+      "level": 162,
+      "nature": "quiet",
+      "ability": "magicbounce",
+      "moveset": [
+        "expandingforce",
+        "dazzlinggleam",
+        "trickroom",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 0
+      },
+      "evs": {
+        "hp": 252,
+        "spa": 252
+      },
+      "heldItem": [
+        "mental_herb"
+      ]
+    },
+    {
+      "species": "bronzong",
+      "level": 162,
+      "nature": "sassy",
+      "ability": "levitate",
+      "moveset": [
+        "reflect",
+        "lightscreen",
+        "gyroball",
+        "trickroom"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 0
+      },
+      "evs": {
+        "hp": 252,
+        "spd": 252
+      },
+      "heldItem": [
+        "light_clay"
+      ]
+    },
+    {
+      "species": "alakazam",
+      "level": 162,
+      "nature": "timid",
+      "ability": "magicguard",
+      "moveset": [
+        "psychic",
+        "shadowball",
+        "dazzlinggleam",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "spa": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "focus_sash"
+      ]
+    },
+    {
+      "species": "electivire",
+      "level": 162,
+      "nature": "jolly",
+      "ability": "motordrive",
+      "moveset": [
+        "wildcharge",
+        "earthquake",
+        "icepunch",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "magnezone",
+      "level": 162,
+      "nature": "modest",
+      "ability": "magnetpull",
+      "moveset": [
+        "thunderbolt",
+        "flashcannon",
+        "voltswitch",
+        "electroweb"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "spa": 252
+      },
+      "gimmicks": {
+        "tera": "electric"
+      },
+      "heldItem": [
+        "assault_vest"
+      ]
+    },
+    {
+      "species": "metagross",
+      "level": 164,
+      "nature": "jolly",
+      "ability": "clearbody",
+      "moveset": [
+        "meteormash",
+        "zenheadbutt",
+        "bulletpunch",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "team_flare",
+  "series": [
+    "steamos_might"
+  ],
+  "requiredDefeats": [
+    [
+      "might_ophelia_crane_02"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

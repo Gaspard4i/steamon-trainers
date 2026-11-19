@@ -1,0 +1,12 @@
+{
+  "type": "normal",
+  "series": [
+    "steamos_spark"
+  ],
+  "requiredDefeats": [
+    [
+      "spark_dax_moreau_02"
+    ]
+  ],
+  "optional": false
+}

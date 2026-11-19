@@ -1,0 +1,8 @@
+{
+  "type": "normal",
+  "series": [
+    "steamos_spark"
+  ],
+  "requiredDefeats": [],
+  "optional": false
+}

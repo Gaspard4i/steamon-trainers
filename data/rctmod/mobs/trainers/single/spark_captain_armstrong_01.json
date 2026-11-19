@@ -1,0 +1,16 @@
+{
+  "type": "leader",
+  "series": [
+    "steamos_spark"
+  ],
+  "requiredDefeats": [
+    [
+      "spark_sergeant_elara_brandt_01"
+    ],
+    [
+      "spark_kenji_aoki_01"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

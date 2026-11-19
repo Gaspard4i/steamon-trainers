@@ -1,0 +1,16 @@
+{
+  "type": "leader",
+  "series": [
+    "steamos_relic"
+  ],
+  "requiredDefeats": [
+    [
+      "relic_sergeant_elara_brandt_01"
+    ],
+    [
+      "relic_kenji_aoki_01"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

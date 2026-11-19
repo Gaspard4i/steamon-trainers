@@ -1,0 +1,12 @@
+{
+  "type": "lanugo",
+  "series": [
+    "steamos_might"
+  ],
+  "requiredDefeats": [
+    [
+      "might_brann_01"
+    ]
+  ],
+  "optional": false
+}

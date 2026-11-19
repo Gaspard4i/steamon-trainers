@@ -1,0 +1,12 @@
+{
+  "type": "team_flare",
+  "series": [
+    "steamos_relic"
+  ],
+  "requiredDefeats": [
+    [
+      "relic_flare_digger_holt_01"
+    ]
+  ],
+  "optional": false
+}

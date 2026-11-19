@@ -4,6 +4,19 @@ All notable changes to this project are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [Unreleased]
+
+### Added
+
+- The Steamos story in three team versions, as RCTMod series `steamos_spark`, `steamos_relic` and `steamos_might` (184 trainers in total, chained by `requiredDefeats`).
+- Teams, dialogue and defeat advancements for every new trainer.
+- Custom trainer types `team_flare` and `lanugo`.
+
+### Changed
+
+- Requirements: Cobblemon 1.8.x, RCTMod 0.19.2-beta, RCTAPI and Mega Showdown. Late story fights use levels above 100 and need Cobblemon `maxPokemonLevel` raised.
+- README rewritten as a short project summary.
+
 ## [1.0.0] - 2026-07-28
 
 ### Added

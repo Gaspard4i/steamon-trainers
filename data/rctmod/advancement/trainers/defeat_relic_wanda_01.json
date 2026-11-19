@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "defeat_relic_wanda_01": {
+      "trigger": "rctmod:defeat_count",
+      "conditions": {
+        "count": 1,
+        "entity": {
+          "type": null
+        },
+        "trainer_ids": [
+          "relic_wanda_01"
+        ],
+        "trainer_type": null
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": null,
+    "description": {
+      "text": "Defeat Wanda."
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "id": "cobblemon:poke_ball"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Wanda"
+    }
+  },
+  "requirements": [
+    [
+      "defeat_relic_wanda_01"
+    ]
+  ]
+}

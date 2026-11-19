@@ -1,0 +1,85 @@
+{
+  "name": "King of the Wooloo",
+  "identity": "King of the Wooloo",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.35
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "miltank",
+      "level": 36,
+      "nature": "impish",
+      "ability": "scrappy",
+      "moveset": [
+        "bodyslam",
+        "healbell",
+        "rollout",
+        "milkdrink"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    },
+    {
+      "species": "bouffalant",
+      "level": 36,
+      "nature": "adamant",
+      "ability": "reckless",
+      "moveset": [
+        "headcharge",
+        "megahorn",
+        "earthquake",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "dubwool",
+      "level": 38,
+      "nature": "adamant",
+      "ability": "fluffy",
+      "moveset": [
+        "doubleedge",
+        "cottonguard",
+        "swordsdance",
+        "rest"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    }
+  ]
+}

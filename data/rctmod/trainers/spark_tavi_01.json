@@ -1,0 +1,85 @@
+{
+  "name": "Tavi",
+  "identity": "Tavi",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.35
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "liepard",
+      "level": 40,
+      "nature": "jolly",
+      "ability": "prankster",
+      "moveset": [
+        "knockoff",
+        "thunderwave",
+        "encore",
+        "uturn"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    },
+    {
+      "species": "skuntank",
+      "level": 40,
+      "nature": "adamant",
+      "ability": "aftermath",
+      "moveset": [
+        "poisonjab",
+        "crunch",
+        "suckerpunch",
+        "fireblast"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    },
+    {
+      "species": "drapion",
+      "level": 42,
+      "nature": "jolly",
+      "ability": "sniper",
+      "moveset": [
+        "knockoff",
+        "crosspoison",
+        "icefang",
+        "poisonfang"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    }
+  ]
+}

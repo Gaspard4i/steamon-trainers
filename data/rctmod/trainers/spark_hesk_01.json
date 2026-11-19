@@ -1,0 +1,121 @@
+{
+  "name": "Hesk",
+  "identity": "Hesk",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.3
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "crawdaunt",
+      "level": 57,
+      "nature": "adamant",
+      "ability": "adaptability",
+      "moveset": [
+        "crabhammer",
+        "knockoff",
+        "aquajet",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "atk": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "mystic_water"
+      ]
+    },
+    {
+      "species": "scrafty",
+      "level": 57,
+      "nature": "careful",
+      "ability": "intimidate",
+      "moveset": [
+        "drainpunch",
+        "knockoff",
+        "bulkup",
+        "dragondance"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "def": 100
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "hippowdon",
+      "level": 57,
+      "nature": "impish",
+      "ability": "sandstream",
+      "moveset": [
+        "earthquake",
+        "slackoff",
+        "stealthrock",
+        "whirlwind"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "def": 100
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "krookodile",
+      "level": 59,
+      "nature": "jolly",
+      "ability": "intimidate",
+      "moveset": [
+        "earthquake",
+        "crunch",
+        "stoneedge",
+        "dragonclaw"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "atk": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "black_glasses"
+      ]
+    }
+  ]
+}

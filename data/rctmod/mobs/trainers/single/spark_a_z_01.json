@@ -1,0 +1,12 @@
+{
+  "type": "normal",
+  "series": [
+    "steamos_spark"
+  ],
+  "requiredDefeats": [
+    [
+      "spark_dr_mordecai_vane_01"
+    ]
+  ],
+  "optional": false
+}

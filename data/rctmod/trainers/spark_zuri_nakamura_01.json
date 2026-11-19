@@ -1,0 +1,125 @@
+{
+  "name": "Zuri Nakamura",
+  "identity": "Zuri Nakamura",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.1
+    }
+  },
+  "battleFormat": "GEN_9_DOUBLES",
+  "team": [
+    {
+      "species": "cofagrigus",
+      "level": 144,
+      "nature": "bold",
+      "ability": "mummy",
+      "moveset": [
+        "shadowball",
+        "trickroom",
+        "willowisp",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "def": 100,
+        "spa": 100
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "claydol",
+      "level": 144,
+      "nature": "bold",
+      "ability": "levitate",
+      "moveset": [
+        "earthpower",
+        "psychic",
+        "reflect",
+        "lightscreen"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "def": 100,
+        "spd": 100
+      },
+      "heldItem": [
+        "light_clay"
+      ]
+    },
+    {
+      "species": "hippowdon",
+      "level": 144,
+      "nature": "impish",
+      "ability": "sandstream",
+      "moveset": [
+        "earthquake",
+        "slackoff",
+        "stealthrock",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "atk": 100,
+        "def": 100
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "golurk",
+      "level": 146,
+      "nature": "adamant",
+      "ability": "noguard",
+      "moveset": [
+        "earthquake",
+        "shadowpunch",
+        "dynamicpunch",
+        "rockslide"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "atk": 100,
+        "spd": 100
+      },
+      "heldItem": [
+        "choice_band"
+      ]
+    }
+  ]
+}

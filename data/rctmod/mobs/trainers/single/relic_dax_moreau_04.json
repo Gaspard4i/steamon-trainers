@@ -1,0 +1,13 @@
+{
+  "type": "rival",
+  "series": [
+    "steamos_relic"
+  ],
+  "requiredDefeats": [
+    [
+      "relic_mira_okoye_05"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

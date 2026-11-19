@@ -1,0 +1,13 @@
+{
+  "type": "normal",
+  "series": [
+    "steamos_relic"
+  ],
+  "requiredDefeats": [
+    [
+      "relic_lysandre_02"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

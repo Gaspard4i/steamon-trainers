@@ -1,0 +1,16 @@
+{
+  "type": "leader",
+  "series": [
+    "steamos_relic"
+  ],
+  "requiredDefeats": [
+    [
+      "relic_prof_anselm_dray_02"
+    ],
+    [
+      "relic_zuri_nakamura_02"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

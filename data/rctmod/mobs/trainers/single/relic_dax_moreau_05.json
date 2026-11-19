@@ -1,0 +1,19 @@
+{
+  "type": "rival",
+  "series": [
+    "steamos_relic"
+  ],
+  "requiredDefeats": [
+    [
+      "relic_captain_armstrong_01"
+    ],
+    [
+      "relic_richard_nuevo_01"
+    ],
+    [
+      "relic_crystal_isla_01"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

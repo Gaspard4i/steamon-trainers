@@ -1,0 +1,13 @@
+{
+  "type": "team_flare",
+  "series": [
+    "steamos_relic"
+  ],
+  "requiredDefeats": [
+    [
+      "relic_silas_rook_02"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

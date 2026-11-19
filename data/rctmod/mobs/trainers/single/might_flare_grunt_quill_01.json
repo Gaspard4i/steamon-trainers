@@ -1,0 +1,12 @@
+{
+  "type": "team_flare",
+  "series": [
+    "steamos_might"
+  ],
+  "requiredDefeats": [
+    [
+      "might_flare_grunt_sable_01"
+    ]
+  ],
+  "optional": false
+}

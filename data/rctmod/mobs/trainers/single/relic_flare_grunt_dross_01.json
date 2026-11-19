@@ -1,0 +1,12 @@
+{
+  "type": "team_flare",
+  "series": [
+    "steamos_relic"
+  ],
+  "requiredDefeats": [
+    [
+      "relic_flare_grunt_ash_01"
+    ]
+  ],
+  "optional": false
+}

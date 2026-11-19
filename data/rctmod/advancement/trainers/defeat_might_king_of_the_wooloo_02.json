@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "defeat_might_king_of_the_wooloo_02": {
+      "trigger": "rctmod:defeat_count",
+      "conditions": {
+        "count": 1,
+        "entity": {
+          "type": null
+        },
+        "trainer_ids": [
+          "might_king_of_the_wooloo_02"
+        ],
+        "trainer_type": null
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": null,
+    "description": {
+      "text": "Defeat King of the Wooloo."
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "id": "cobblemon:poke_ball"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "King of the Wooloo"
+    }
+  },
+  "requirements": [
+    [
+      "defeat_might_king_of_the_wooloo_02"
+    ]
+  ]
+}

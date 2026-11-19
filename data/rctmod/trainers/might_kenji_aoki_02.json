@@ -1,0 +1,178 @@
+{
+  "name": "Kenji Aoki",
+  "identity": "Kenji Aoki",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.1
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "hitmonlee",
+      "level": 168,
+      "nature": "jolly",
+      "ability": "unburden",
+      "moveset": [
+        "highjumpkick",
+        "knockoff",
+        "machpunch",
+        "stoneedge"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "choice_scarf"
+      ]
+    },
+    {
+      "species": "breloom",
+      "level": 168,
+      "nature": "jolly",
+      "ability": "technician",
+      "moveset": [
+        "machpunch",
+        "bulletseed",
+        "spore",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "toxicroak",
+      "level": 168,
+      "nature": "jolly",
+      "ability": "dryskin",
+      "moveset": [
+        "drainpunch",
+        "gunkshot",
+        "suckerpunch",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "black_sludge"
+      ]
+    },
+    {
+      "species": "machamp",
+      "level": 168,
+      "nature": "adamant",
+      "ability": "noguard",
+      "moveset": [
+        "dynamicpunch",
+        "bulletpunch",
+        "knockoff",
+        "icepunch"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252
+      },
+      "heldItem": [
+        "assault_vest"
+      ]
+    },
+    {
+      "species": "pangoro",
+      "level": 168,
+      "nature": "adamant",
+      "ability": "scrappy",
+      "moveset": [
+        "drainpunch",
+        "knockoff",
+        "partingshot",
+        "bulletpunch"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "kommoo",
+      "level": 170,
+      "nature": "timid",
+      "ability": "soundproof",
+      "moveset": [
+        "clangingscales",
+        "closecombat",
+        "flashcannon",
+        "focusblast"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "spa": 252,
+        "spe": 252
+      },
+      "gimmicks": {
+        "tera": "steel"
+      },
+      "heldItem": [
+        "throat_spray"
+      ]
+    }
+  ]
+}

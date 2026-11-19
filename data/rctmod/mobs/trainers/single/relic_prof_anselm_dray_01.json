@@ -1,0 +1,12 @@
+{
+  "type": "normal",
+  "series": [
+    "steamos_relic"
+  ],
+  "requiredDefeats": [
+    [
+      "relic_dax_moreau_02"
+    ]
+  ],
+  "optional": false
+}

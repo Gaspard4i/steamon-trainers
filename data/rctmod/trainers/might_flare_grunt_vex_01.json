@@ -1,0 +1,150 @@
+{
+  "name": "Flare Grunt Vex",
+  "identity": "Flare Grunt Vex",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.2
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "muk",
+      "level": 86,
+      "nature": "adamant",
+      "ability": "poisontouch",
+      "moveset": [
+        "poisonjab",
+        "knockoff",
+        "shadowsneak",
+        "drainpunch"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "black_sludge"
+      ]
+    },
+    {
+      "species": "cacturne",
+      "level": 86,
+      "nature": "jolly",
+      "ability": "waterabsorb",
+      "moveset": [
+        "suckerpunch",
+        "seedbomb",
+        "swordsdance",
+        "drainpunch"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "focus_sash"
+      ]
+    },
+    {
+      "species": "crobat",
+      "level": 86,
+      "nature": "jolly",
+      "ability": "infiltrator",
+      "moveset": [
+        "bravebird",
+        "crosspoison",
+        "uturn",
+        "taunt"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "heavy_duty_boots"
+      ]
+    },
+    {
+      "species": "magcargo",
+      "level": 86,
+      "nature": "bold",
+      "ability": "flamebody",
+      "moveset": [
+        "lavaplume",
+        "recover",
+        "stealthrock",
+        "earthpower"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "hp": 252,
+        "def": 200,
+        "spa": 50
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "chandelure",
+      "level": 88,
+      "nature": "timid",
+      "ability": "flashfire",
+      "moveset": [
+        "shadowball",
+        "flamethrower",
+        "energyball",
+        "trick"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 0,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "spa": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "choice_scarf"
+      ]
+    }
+  ]
+}

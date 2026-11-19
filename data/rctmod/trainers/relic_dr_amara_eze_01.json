@@ -1,0 +1,85 @@
+{
+  "name": "Dr. Amara Eze",
+  "identity": "Dr. Amara Eze",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.35
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "cofagrigus",
+      "level": 42,
+      "nature": "bold",
+      "ability": "mummy",
+      "moveset": [
+        "shadowball",
+        "willowisp",
+        "protect",
+        "painsplit"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    },
+    {
+      "species": "claydol",
+      "level": 42,
+      "nature": "calm",
+      "ability": "levitate",
+      "moveset": [
+        "earthpower",
+        "psychic",
+        "rapidspin",
+        "ancientpower"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    },
+    {
+      "species": "cradily",
+      "level": 44,
+      "nature": "careful",
+      "ability": "stormdrain",
+      "moveset": [
+        "gigadrain",
+        "ancientpower",
+        "recover",
+        "confuseray"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    }
+  ]
+}

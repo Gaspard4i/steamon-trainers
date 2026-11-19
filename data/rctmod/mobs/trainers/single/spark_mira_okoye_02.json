@@ -1,0 +1,12 @@
+{
+  "type": "rival",
+  "series": [
+    "steamos_spark"
+  ],
+  "requiredDefeats": [
+    [
+      "spark_felix_aarden_01"
+    ]
+  ],
+  "optional": false
+}

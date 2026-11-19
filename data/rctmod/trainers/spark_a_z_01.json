@@ -1,0 +1,128 @@
+{
+  "name": "A.Z.",
+  "identity": "A.Z.",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.2
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "gothitelle",
+      "level": 98,
+      "nature": "calm",
+      "ability": "shadowtag",
+      "moveset": [
+        "psychic",
+        "thunderwave",
+        "rest",
+        "taunt"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 28,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 100,
+        "spd": 156
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "trevenant",
+      "level": 98,
+      "nature": "adamant",
+      "ability": "harvest",
+      "moveset": [
+        "hornleech",
+        "phantomforce",
+        "trickroom",
+        "rest"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "malamar",
+      "level": 98,
+      "nature": "jolly",
+      "ability": "contrary",
+      "moveset": [
+        "superpower",
+        "knockoff",
+        "psychocut",
+        "rest"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "def": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "floette",
+      "level": 100,
+      "nature": "calm",
+      "ability": "flowerveil",
+      "moveset": [
+        "lightofruin",
+        "moonblast",
+        "wish",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 4,
+        "spd": 252
+      },
+      "aspects": [
+        "flower-eternal"
+      ],
+      "heldItem": [
+        "leftovers"
+      ]
+    }
+  ]
+}

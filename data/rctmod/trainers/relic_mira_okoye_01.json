@@ -1,0 +1,61 @@
+{
+  "name": "Mira Okoye",
+  "identity": "Mira Okoye",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.4
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "archen",
+      "level": 17,
+      "nature": "adamant",
+      "ability": "defeatist",
+      "moveset": [
+        "rockthrow",
+        "quickattack",
+        "wingattack",
+        "ancientpower"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    },
+    {
+      "species": "eevee",
+      "level": 19,
+      "nature": "jolly",
+      "ability": "adaptability",
+      "moveset": [
+        "quickattack",
+        "bite",
+        "swift",
+        "babydolleyes"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    }
+  ]
+}

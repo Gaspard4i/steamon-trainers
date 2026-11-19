@@ -1,0 +1,125 @@
+{
+  "name": "Neshi",
+  "identity": "Neshi",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.3
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "gogoat",
+      "level": 70,
+      "nature": "adamant",
+      "ability": "sapsipper",
+      "moveset": [
+        "hornleech",
+        "bulkup",
+        "earthquake",
+        "milkdrink"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "atk": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "miracle_seed"
+      ]
+    },
+    {
+      "species": "sawsbuck",
+      "level": 70,
+      "nature": "jolly",
+      "ability": "sapsipper",
+      "moveset": [
+        "hornleech",
+        "doubleedge",
+        "jumpkick",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "atk": 100,
+        "spd": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "medicham",
+      "level": 70,
+      "nature": "adamant",
+      "ability": "purepower",
+      "moveset": [
+        "closecombat",
+        "zenheadbutt",
+        "icepunch",
+        "bulletpunch"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "atk": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "torterra",
+      "level": 72,
+      "nature": "impish",
+      "ability": "overgrow",
+      "moveset": [
+        "woodhammer",
+        "earthquake",
+        "stealthrock",
+        "synthesis"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "atk": 100,
+        "def": 100
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    }
+  ]
+}

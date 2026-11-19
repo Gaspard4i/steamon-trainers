@@ -1,0 +1,13 @@
+{
+  "type": "normal",
+  "series": [
+    "steamos_might"
+  ],
+  "requiredDefeats": [
+    [
+      "might_king_of_the_wooloo_02"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

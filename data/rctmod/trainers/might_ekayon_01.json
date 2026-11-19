@@ -1,0 +1,121 @@
+{
+  "name": "Ekayon",
+  "identity": "Ekayon",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.3
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "gardevoir",
+      "level": 63,
+      "nature": "modest",
+      "ability": "trace",
+      "moveset": [
+        "moonblast",
+        "psychic",
+        "calmmind",
+        "mysticalfire"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "spa": 100,
+        "spd": 100
+      },
+      "heldItem": [
+        "twisted_spoon"
+      ]
+    },
+    {
+      "species": "zoroark",
+      "level": 63,
+      "nature": "timid",
+      "ability": "illusion",
+      "moveset": [
+        "nightdaze",
+        "flamethrower",
+        "focusblast",
+        "sludgebomb"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "spa": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "zeraora",
+      "level": 63,
+      "nature": "jolly",
+      "ability": "voltabsorb",
+      "moveset": [
+        "plasmafists",
+        "closecombat",
+        "knockoff",
+        "fakeout"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "atk": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "expert_belt"
+      ]
+    },
+    {
+      "species": "lucario",
+      "level": 65,
+      "nature": "adamant",
+      "ability": "innerfocus",
+      "moveset": [
+        "closecombat",
+        "meteormash",
+        "extremespeed",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "atk": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "focus_sash"
+      ]
+    }
+  ]
+}

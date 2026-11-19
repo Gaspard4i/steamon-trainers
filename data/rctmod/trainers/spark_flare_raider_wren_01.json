@@ -1,0 +1,124 @@
+{
+  "name": "Flare Raider Wren",
+  "identity": "Flare Raider Wren",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.2
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "pangoro",
+      "level": 81,
+      "nature": "adamant",
+      "ability": "scrappy",
+      "moveset": [
+        "knockoff",
+        "drainpunch",
+        "gunkshot",
+        "partingshot"
+      ],
+      "ivs": {
+        "hp": 26,
+        "atk": 26,
+        "def": 26,
+        "spa": 26,
+        "spd": 26,
+        "spe": 26
+      },
+      "evs": {
+        "hp": 200,
+        "atk": 252,
+        "spe": 50
+      },
+      "heldItem": [
+        "choice_band"
+      ]
+    },
+    {
+      "species": "scrafty",
+      "level": 81,
+      "nature": "impish",
+      "ability": "intimidate",
+      "moveset": [
+        "drainpunch",
+        "knockoff",
+        "bulkup",
+        "rest"
+      ],
+      "ivs": {
+        "hp": 26,
+        "atk": 26,
+        "def": 26,
+        "spa": 26,
+        "spd": 26,
+        "spe": 26
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 150,
+        "def": 100
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "krookodile",
+      "level": 81,
+      "nature": "jolly",
+      "ability": "intimidate",
+      "moveset": [
+        "earthquake",
+        "knockoff",
+        "stoneedge",
+        "bulkup"
+      ],
+      "ivs": {
+        "hp": 26,
+        "atk": 26,
+        "def": 26,
+        "spa": 26,
+        "spd": 26,
+        "spe": 26
+      },
+      "evs": {
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "incineroar",
+      "level": 83,
+      "nature": "adamant",
+      "ability": "intimidate",
+      "moveset": [
+        "flareblitz",
+        "knockoff",
+        "darkestlariat",
+        "uturn"
+      ],
+      "ivs": {
+        "hp": 26,
+        "atk": 26,
+        "def": 26,
+        "spa": 26,
+        "spd": 26,
+        "spe": 26
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    }
+  ]
+}

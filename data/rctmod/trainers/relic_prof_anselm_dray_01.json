@@ -1,0 +1,125 @@
+{
+  "name": "Prof. Anselm Dray",
+  "identity": "Prof. Anselm Dray",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.3
+    }
+  },
+  "battleFormat": "GEN_9_DOUBLES",
+  "team": [
+    {
+      "species": "bastiodon",
+      "level": 75,
+      "nature": "impish",
+      "ability": "sturdy",
+      "moveset": [
+        "wideguard",
+        "ironhead",
+        "stealthrock",
+        "roar"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "def": 100,
+        "spd": 100
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "archeops",
+      "level": 75,
+      "nature": "naive",
+      "ability": "defeatist",
+      "moveset": [
+        "rockslide",
+        "acrobatics",
+        "tailwind",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "atk": 100,
+        "spa": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "aurorus",
+      "level": 75,
+      "nature": "modest",
+      "ability": "refrigerate",
+      "moveset": [
+        "blizzard",
+        "hypervoice",
+        "ancientpower",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "spa": 100,
+        "spd": 100
+      },
+      "heldItem": [
+        "light_clay"
+      ]
+    },
+    {
+      "species": "rampardos",
+      "level": 77,
+      "nature": "jolly",
+      "ability": "moldbreaker",
+      "moveset": [
+        "headsmash",
+        "zenheadbutt",
+        "rockslide",
+        "firepunch"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "atk": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "choice_scarf"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "name": "Flare Hacker Nox",
+  "identity": "Flare Hacker Nox",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.2
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "liepard",
+      "level": 80,
+      "nature": "jolly",
+      "ability": "prankster",
+      "moveset": [
+        "knockoff",
+        "thunderwave",
+        "encore",
+        "uturn"
+      ],
+      "ivs": {
+        "hp": 26,
+        "atk": 26,
+        "def": 26,
+        "spa": 26,
+        "spd": 26,
+        "spe": 26
+      },
+      "evs": {
+        "hp": 200,
+        "atk": 100,
+        "spe": 200
+      },
+      "heldItem": [
+        "black_glasses"
+      ]
+    },
+    {
+      "species": "weezing",
+      "level": 80,
+      "nature": "bold",
+      "ability": "neutralizinggas",
+      "moveset": [
+        "sludgebomb",
+        "willowisp",
+        "painsplit",
+        "toxicspikes"
+      ],
+      "ivs": {
+        "hp": 26,
+        "atk": 26,
+        "def": 26,
+        "spa": 26,
+        "spd": 26,
+        "spe": 26
+      },
+      "evs": {
+        "hp": 252,
+        "def": 200,
+        "spd": 50
+      },
+      "heldItem": [
+        "rocky_helmet"
+      ]
+    },
+    {
+      "species": "mismagius",
+      "level": 80,
+      "nature": "timid",
+      "ability": "levitate",
+      "moveset": [
+        "shadowball",
+        "dazzlinggleam",
+        "thunderbolt",
+        "taunt"
+      ],
+      "ivs": {
+        "hp": 26,
+        "atk": 0,
+        "def": 26,
+        "spa": 26,
+        "spd": 26,
+        "spe": 26
+      },
+      "evs": {
+        "spa": 200,
+        "spe": 200
+      },
+      "heldItem": [
+        "focus_sash"
+      ]
+    },
+    {
+      "species": "rotom",
+      "level": 82,
+      "nature": "timid",
+      "ability": "levitate",
+      "moveset": [
+        "overheat",
+        "voltswitch",
+        "shadowball",
+        "trick"
+      ],
+      "ivs": {
+        "hp": 26,
+        "atk": 0,
+        "def": 26,
+        "spa": 26,
+        "spd": 26,
+        "spe": 26
+      },
+      "evs": {
+        "spa": 252,
+        "spe": 252
+      },
+      "aspects": [
+        "heat-appliance"
+      ],
+      "heldItem": [
+        "choice_scarf"
+      ]
+    }
+  ]
+}

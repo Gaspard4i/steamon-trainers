@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "defeat_might_pablo_ferrer_01": {
+      "trigger": "rctmod:defeat_count",
+      "conditions": {
+        "count": 1,
+        "entity": {
+          "type": null
+        },
+        "trainer_ids": [
+          "might_pablo_ferrer_01"
+        ],
+        "trainer_type": null
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": null,
+    "description": {
+      "text": "Defeat Pablo Ferrer."
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "id": "cobblemon:poke_ball"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Pablo Ferrer"
+    }
+  },
+  "requirements": [
+    [
+      "defeat_might_pablo_ferrer_01"
+    ]
+  ]
+}

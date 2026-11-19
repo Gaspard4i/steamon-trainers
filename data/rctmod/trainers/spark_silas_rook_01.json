@@ -1,0 +1,151 @@
+{
+  "name": "Silas Rook",
+  "identity": "Silas Rook",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.2
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "bisharp",
+      "level": 85,
+      "nature": "jolly",
+      "ability": "defiant",
+      "moveset": [
+        "suckerpunch",
+        "ironhead",
+        "knockoff",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "gyarados",
+      "level": 85,
+      "nature": "adamant",
+      "ability": "intimidate",
+      "moveset": [
+        "waterfall",
+        "crunch",
+        "dragondance",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "skarmory",
+      "level": 85,
+      "nature": "impish",
+      "ability": "sturdy",
+      "moveset": [
+        "bravebird",
+        "spikes",
+        "roost",
+        "whirlwind"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "hp": 252,
+        "def": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "rocky_helmet"
+      ]
+    },
+    {
+      "species": "tyranitar",
+      "level": 85,
+      "nature": "adamant",
+      "ability": "sandstream",
+      "moveset": [
+        "crunch",
+        "stoneedge",
+        "superpower",
+        "pursuit"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "choice_band"
+      ]
+    },
+    {
+      "species": "houndoom",
+      "level": 87,
+      "nature": "timid",
+      "ability": "flashfire",
+      "moveset": [
+        "flamethrower",
+        "darkpulse",
+        "sludgebomb",
+        "nastyplot"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 0,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "spa": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "mega_showdown:houndoominite"
+      ]
+    }
+  ]
+}

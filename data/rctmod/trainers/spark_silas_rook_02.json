@@ -1,0 +1,180 @@
+{
+  "name": "Silas Rook",
+  "identity": "Silas Rook",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.15
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "blaziken",
+      "level": 119,
+      "nature": "jolly",
+      "ability": "speedboost",
+      "moveset": [
+        "flareblitz",
+        "closecombat",
+        "knockoff",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "talonflame",
+      "level": 119,
+      "nature": "jolly",
+      "ability": "galewings",
+      "moveset": [
+        "bravebird",
+        "flareblitz",
+        "swordsdance",
+        "roost"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "heavy_duty_boots"
+      ]
+    },
+    {
+      "species": "grimmsnarl",
+      "level": 119,
+      "nature": "adamant",
+      "ability": "prankster",
+      "moveset": [
+        "spiritbreak",
+        "lightscreen",
+        "reflect",
+        "thunderwave"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "light_clay"
+      ]
+    },
+    {
+      "species": "ceruledge",
+      "level": 119,
+      "nature": "jolly",
+      "ability": "weakarmor",
+      "moveset": [
+        "bitterblade",
+        "shadowsneak",
+        "swordsdance",
+        "poltergeist"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "focus_sash"
+      ]
+    },
+    {
+      "species": "hydreigon",
+      "level": 119,
+      "nature": "timid",
+      "ability": "levitate",
+      "moveset": [
+        "darkpulse",
+        "dracometeor",
+        "flashcannon",
+        "fireblast"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "spa": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "choice_specs"
+      ]
+    },
+    {
+      "species": "kingambit",
+      "level": 121,
+      "nature": "adamant",
+      "ability": "defiant",
+      "moveset": [
+        "kowtowcleave",
+        "suckerpunch",
+        "ironhead",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "gimmicks": {
+        "tera": "dark"
+      },
+      "heldItem": [
+        "black_glasses"
+      ]
+    }
+  ]
+}

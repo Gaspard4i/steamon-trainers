@@ -1,0 +1,13 @@
+{
+  "type": "rival",
+  "series": [
+    "steamos_spark"
+  ],
+  "requiredDefeats": [
+    [
+      "spark_mira_okoye_04"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

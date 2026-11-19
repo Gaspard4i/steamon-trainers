@@ -1,0 +1,13 @@
+{
+  "type": "e4",
+  "series": [
+    "steamos_spark"
+  ],
+  "requiredDefeats": [
+    [
+      "spark_marlo_02"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

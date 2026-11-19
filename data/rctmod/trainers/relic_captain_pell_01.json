@@ -1,0 +1,75 @@
+{
+  "name": "Captain Pell",
+  "identity": "Captain Pell",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.4
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "tentacool",
+      "level": 28,
+      "nature": "hardy",
+      "ability": "liquidooze",
+      "moveset": [
+        "acid",
+        "poisonsting",
+        "supersonic",
+        "wrap"
+      ],
+      "ivs": {
+        "hp": 14,
+        "atk": 14,
+        "def": 14,
+        "spa": 14,
+        "spd": 14,
+        "spe": 14
+      },
+      "evs": {
+        "hp": 0,
+        "atk": 0,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "heldItem": [
+        "oran_berry"
+      ]
+    },
+    {
+      "species": "poliwhirl",
+      "level": 30,
+      "nature": "hardy",
+      "ability": "waterabsorb",
+      "moveset": [
+        "bubble",
+        "doubleslap",
+        "mudshot",
+        "hypnosis"
+      ],
+      "ivs": {
+        "hp": 15,
+        "atk": 15,
+        "def": 15,
+        "spa": 15,
+        "spd": 15,
+        "spe": 15
+      },
+      "evs": {
+        "hp": 0,
+        "atk": 0,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "heldItem": [
+        "oran_berry"
+      ]
+    }
+  ]
+}

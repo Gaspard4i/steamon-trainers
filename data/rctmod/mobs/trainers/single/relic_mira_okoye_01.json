@@ -1,0 +1,12 @@
+{
+  "type": "rival",
+  "series": [
+    "steamos_relic"
+  ],
+  "requiredDefeats": [
+    [
+      "relic_cleo_marchetti_01"
+    ]
+  ],
+  "optional": false
+}

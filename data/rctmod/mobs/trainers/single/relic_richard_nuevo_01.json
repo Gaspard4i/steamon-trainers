@@ -1,0 +1,16 @@
+{
+  "type": "leader",
+  "series": [
+    "steamos_relic"
+  ],
+  "requiredDefeats": [
+    [
+      "relic_dr_ingrid_valk_01"
+    ],
+    [
+      "relic_tomas_reyes_01"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

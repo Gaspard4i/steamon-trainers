@@ -1,0 +1,187 @@
+{
+  "name": "Dr. Mordecai Vane",
+  "identity": "Dr. Mordecai Vane",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.15
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "weezing",
+      "level": 115,
+      "nature": "bold",
+      "ability": "neutralizinggas",
+      "moveset": [
+        "strangesteam",
+        "willowisp",
+        "defog",
+        "painsplit"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 252,
+        "spd": 4
+      },
+      "aspects": [
+        "galarian"
+      ],
+      "heldItem": [
+        "black_sludge"
+      ]
+    },
+    {
+      "species": "dragalge",
+      "level": 115,
+      "nature": "modest",
+      "ability": "adaptability",
+      "moveset": [
+        "dracometeor",
+        "sludgebomb",
+        "focusblast",
+        "toxicspikes"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 4,
+        "spa": 252
+      },
+      "heldItem": [
+        "black_sludge"
+      ]
+    },
+    {
+      "species": "rotom",
+      "level": 115,
+      "nature": "modest",
+      "ability": "levitate",
+      "moveset": [
+        "overheat",
+        "voltswitch",
+        "willowisp",
+        "painsplit"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "spa": 252,
+        "spd": 4
+      },
+      "aspects": [
+        "heat-appliance"
+      ],
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "houndoom",
+      "level": 115,
+      "nature": "timid",
+      "ability": "flashfire",
+      "moveset": [
+        "darkpulse",
+        "fireblast",
+        "sludgebomb",
+        "nastyplot"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "spa": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "choice_specs"
+      ]
+    },
+    {
+      "species": "bronzong",
+      "level": 115,
+      "nature": "relaxed",
+      "ability": "levitate",
+      "moveset": [
+        "gyroball",
+        "psychic",
+        "stealthrock",
+        "toxic"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "gengar",
+      "level": 117,
+      "nature": "timid",
+      "ability": "cursedbody",
+      "moveset": [
+        "shadowball",
+        "sludgewave",
+        "focusblast",
+        "destinybond"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "spa": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "mega_showdown:gengarite"
+      ]
+    }
+  ]
+}

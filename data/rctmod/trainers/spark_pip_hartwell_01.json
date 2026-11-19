@@ -1,0 +1,71 @@
+{
+  "name": "Pip Hartwell",
+  "identity": "Pip Hartwell",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.4
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "magnemite",
+      "level": 13,
+      "nature": "hardy",
+      "ability": "magnetpull",
+      "moveset": [
+        "thundershock",
+        "sonicboom",
+        "supersonic"
+      ],
+      "ivs": {
+        "hp": 10,
+        "atk": 10,
+        "def": 10,
+        "spa": 10,
+        "spd": 10,
+        "spe": 10
+      },
+      "evs": {
+        "hp": 0,
+        "atk": 0,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      }
+    },
+    {
+      "species": "grubbin",
+      "level": 15,
+      "nature": "hardy",
+      "ability": "swarm",
+      "moveset": [
+        "bugbite",
+        "stringshot",
+        "vicegrip",
+        "mudslap"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {
+        "hp": 0,
+        "atk": 0,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "heldItem": [
+        "oran_berry"
+      ]
+    }
+  ]
+}

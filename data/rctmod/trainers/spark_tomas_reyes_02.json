@@ -1,0 +1,187 @@
+{
+  "name": "Tomas Reyes",
+  "identity": "Tomas Reyes",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.1
+    }
+  },
+  "battleFormat": "GEN_9_DOUBLES",
+  "team": [
+    {
+      "species": "bronzong",
+      "level": 168,
+      "nature": "sassy",
+      "ability": "levitate",
+      "moveset": [
+        "gyroball",
+        "psychic",
+        "reflect",
+        "lightscreen"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 4,
+        "spd": 252
+      },
+      "heldItem": [
+        "light_clay"
+      ]
+    },
+    {
+      "species": "copperajah",
+      "level": 168,
+      "nature": "brave",
+      "ability": "heavymetal",
+      "moveset": [
+        "heavyslam",
+        "highhorsepower",
+        "playrough",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "def": 4
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "rotom",
+      "level": 168,
+      "nature": "modest",
+      "ability": "levitate",
+      "moveset": [
+        "hydropump",
+        "thunderbolt",
+        "willowisp",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "spa": 252,
+        "def": 4
+      },
+      "aspects": [
+        "wash-appliance"
+      ],
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "electivire",
+      "level": 168,
+      "nature": "jolly",
+      "ability": "motordrive",
+      "moveset": [
+        "wildcharge",
+        "crosschop",
+        "icepunch",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 4,
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "aegislash",
+      "level": 168,
+      "nature": "adamant",
+      "ability": "stancechange",
+      "moveset": [
+        "shadowsneak",
+        "sacredsword",
+        "kingsshield",
+        "ironhead"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "def": 4
+      },
+      "heldItem": [
+        "weakness_policy"
+      ]
+    },
+    {
+      "species": "toxtricity",
+      "level": 170,
+      "nature": "modest",
+      "ability": "punkrock",
+      "moveset": [
+        "overdrive",
+        "boomburst",
+        "sludgebomb",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 4,
+        "spa": 252,
+        "spe": 252
+      },
+      "gimmicks": {
+        "tera": "electric"
+      },
+      "heldItem": [
+        "throat_spray"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "name": "Lena Ortiz",
+  "identity": "Lena Ortiz",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.4
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "klink",
+      "level": 21,
+      "nature": "hardy",
+      "ability": "clearbody",
+      "moveset": [
+        "chargebeam",
+        "visegrip",
+        "geargrind",
+        "screech"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {
+        "hp": 0,
+        "atk": 0,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "heldItem": [
+        "metal_coat"
+      ]
+    },
+    {
+      "species": "bronzor",
+      "level": 23,
+      "nature": "hardy",
+      "ability": "levitate",
+      "moveset": [
+        "confusion",
+        "irondefense",
+        "gyroball",
+        "imprison"
+      ],
+      "ivs": {
+        "hp": 14,
+        "atk": 14,
+        "def": 14,
+        "spa": 14,
+        "spd": 14,
+        "spe": 14
+      },
+      "evs": {
+        "hp": 0,
+        "atk": 0,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "heldItem": [
+        "oran_berry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "leader",
+  "series": [
+    "steamos_spark"
+  ],
+  "requiredDefeats": [
+    [
+      "spark_prof_anselm_dray_01"
+    ],
+    [
+      "spark_zuri_nakamura_01"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

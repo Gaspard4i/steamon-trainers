@@ -1,0 +1,12 @@
+{
+  "type": "normal",
+  "series": [
+    "steamos_relic"
+  ],
+  "requiredDefeats": [
+    [
+      "relic_dr_amara_eze_01"
+    ]
+  ],
+  "optional": false
+}

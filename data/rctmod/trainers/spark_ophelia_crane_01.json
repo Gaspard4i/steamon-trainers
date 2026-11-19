@@ -1,0 +1,157 @@
+{
+  "name": "Ophelia Crane",
+  "identity": "Ophelia Crane",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.2
+    }
+  },
+  "battleFormat": "GEN_9_DOUBLES",
+  "team": [
+    {
+      "species": "froslass",
+      "level": 83,
+      "nature": "timid",
+      "ability": "cursedbody",
+      "moveset": [
+        "icywind",
+        "shadowball",
+        "willowisp",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 0,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "spa": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "focus_sash"
+      ]
+    },
+    {
+      "species": "meowstic",
+      "level": 83,
+      "nature": "bold",
+      "ability": "infiltrator",
+      "moveset": [
+        "lightscreen",
+        "reflect",
+        "psychic",
+        "fakeout"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 0,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "hp": 252,
+        "def": 100,
+        "spd": 150
+      },
+      "aspects": [
+        "female"
+      ],
+      "heldItem": [
+        "light_clay"
+      ]
+    },
+    {
+      "species": "avalugg",
+      "level": 83,
+      "nature": "brave",
+      "ability": "sturdy",
+      "moveset": [
+        "avalanche",
+        "recover",
+        "earthquake",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 0
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "def": 4
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "weavile",
+      "level": 83,
+      "nature": "jolly",
+      "ability": "pressure",
+      "moveset": [
+        "fakeout",
+        "tripleaxel",
+        "knockoff",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "gothitelle",
+      "level": 85,
+      "nature": "modest",
+      "ability": "shadowtag",
+      "moveset": [
+        "psychic",
+        "darkpulse",
+        "trickroom",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 0,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "hp": 252,
+        "spa": 252,
+        "spd": 4
+      },
+      "gimmicks": {
+        "tera": "dark"
+      },
+      "heldItem": [
+        "safety_goggles"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "name": "Zuri Nakamura",
+  "identity": "Zuri Nakamura",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.1
+    }
+  },
+  "battleFormat": "GEN_9_DOUBLES",
+  "team": [
+    {
+      "species": "sigilyph",
+      "level": 168,
+      "nature": "timid",
+      "ability": "magicguard",
+      "moveset": [
+        "psychic",
+        "airslash",
+        "tailwind",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 4,
+        "spa": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "focus_sash"
+      ]
+    },
+    {
+      "species": "runerigus",
+      "level": 168,
+      "nature": "impish",
+      "ability": "wanderingspirit",
+      "moveset": [
+        "earthquake",
+        "stoneedge",
+        "willowisp",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "rocky_helmet"
+      ]
+    },
+    {
+      "species": "gigalith",
+      "level": 168,
+      "nature": "adamant",
+      "ability": "sandstream",
+      "moveset": [
+        "rockslide",
+        "earthquake",
+        "wideguard",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "def": 4
+      },
+      "heldItem": [
+        "safety_goggles"
+      ]
+    },
+    {
+      "species": "dusknoir",
+      "level": 168,
+      "nature": "careful",
+      "ability": "pressure",
+      "moveset": [
+        "shadowsneak",
+        "poltergeist",
+        "trickroom",
+        "willowisp"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 4,
+        "spd": 252
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "flygon",
+      "level": 168,
+      "nature": "jolly",
+      "ability": "levitate",
+      "moveset": [
+        "earthquake",
+        "dragonclaw",
+        "uturn",
+        "rockslide"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 4,
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "choice_scarf"
+      ]
+    },
+    {
+      "species": "tyranitar",
+      "level": 170,
+      "nature": "adamant",
+      "ability": "sandstream",
+      "moveset": [
+        "rockslide",
+        "crunch",
+        "lowkick",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "mega_showdown:tyranitarite"
+      ]
+    }
+  ]
+}

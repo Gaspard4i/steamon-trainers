@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "defeat_spark_daro_01": {
+      "trigger": "rctmod:defeat_count",
+      "conditions": {
+        "count": 1,
+        "entity": {
+          "type": null
+        },
+        "trainer_ids": [
+          "spark_daro_01"
+        ],
+        "trainer_type": null
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": null,
+    "description": {
+      "text": "Defeat Daro."
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "id": "cobblemon:poke_ball"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Daro"
+    }
+  },
+  "requirements": [
+    [
+      "defeat_spark_daro_01"
+    ]
+  ]
+}

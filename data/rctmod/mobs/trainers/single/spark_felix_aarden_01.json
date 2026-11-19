@@ -1,0 +1,12 @@
+{
+  "type": "normal",
+  "series": [
+    "steamos_spark"
+  ],
+  "requiredDefeats": [
+    [
+      "spark_tavi_01"
+    ]
+  ],
+  "optional": false
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Kitu",
+  "identity": "Kitu",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.3
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "fearow",
+      "level": 53,
+      "nature": "jolly",
+      "ability": "keeneye",
+      "moveset": [
+        "drillpeck",
+        "return",
+        "uturn",
+        "roost"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "atk": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "sharp_beak"
+      ]
+    },
+    {
+      "species": "tropius",
+      "level": 53,
+      "nature": "modest",
+      "ability": "chlorophyll",
+      "moveset": [
+        "leafstorm",
+        "airslash",
+        "synthesis",
+        "energyball"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "spa": 100
+      },
+      "heldItem": [
+        "miracle_seed"
+      ]
+    },
+    {
+      "species": "ursaring",
+      "level": 55,
+      "nature": "adamant",
+      "ability": "guts",
+      "moveset": [
+        "facade",
+        "closecombat",
+        "earthquake",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "atk": 100,
+        "hp": 100
+      },
+      "heldItem": [
+        "flame_orb"
+      ]
+    }
+  ]
+}

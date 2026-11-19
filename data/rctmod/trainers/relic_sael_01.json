@@ -1,0 +1,85 @@
+{
+  "name": "Sael",
+  "identity": "Sael",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.35
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "sawsbuck",
+      "level": 39,
+      "nature": "jolly",
+      "ability": "serenegrace",
+      "moveset": [
+        "hornleech",
+        "doubleedge",
+        "jumpkick",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    },
+    {
+      "species": "xatu",
+      "level": 39,
+      "nature": "timid",
+      "ability": "magicbounce",
+      "moveset": [
+        "psychic",
+        "airslash",
+        "roost",
+        "calmmind"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    },
+    {
+      "species": "medicham",
+      "level": 41,
+      "nature": "jolly",
+      "ability": "purepower",
+      "moveset": [
+        "zenheadbutt",
+        "highjumpkick",
+        "icepunch",
+        "bulletpunch"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "normal",
+  "series": [
+    "steamos_relic"
+  ],
+  "requiredDefeats": [
+    [
+      "relic_sael_01"
+    ]
+  ],
+  "optional": false
+}

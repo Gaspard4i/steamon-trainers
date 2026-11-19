@@ -1,0 +1,188 @@
+{
+  "name": "Richard Nuevo",
+  "identity": "Richard Nuevo",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.1
+    }
+  },
+  "battleFormat": "GEN_9_DOUBLES",
+  "team": [
+    {
+      "species": "porygon2",
+      "level": 198,
+      "nature": "quiet",
+      "ability": "download",
+      "moveset": [
+        "protect",
+        "terablast",
+        "trickroom",
+        "hyperbeam"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 0
+      },
+      "evs": {
+        "hp": 248,
+        "def": 8,
+        "spa": 252
+      },
+      "gimmicks": {
+        "tera": "ground"
+      },
+      "heldItem": [
+        "eviolite"
+      ]
+    },
+    {
+      "species": "pincurchin",
+      "level": 198,
+      "nature": "bold",
+      "ability": "electricsurge",
+      "moveset": [
+        "risingvoltage",
+        "memento",
+        "toxicspikes",
+        "painsplit"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 168,
+        "spa": 4,
+        "spd": 84
+      },
+      "heldItem": [
+        "terrain_extender"
+      ]
+    },
+    {
+      "species": "ironhands",
+      "level": 198,
+      "nature": "brave",
+      "ability": "quarkdrive",
+      "moveset": [
+        "swordsdance",
+        "drainpunch",
+        "icepunch",
+        "wildcharge"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 0
+      },
+      "evs": {
+        "hp": 248,
+        "atk": 252,
+        "spd": 8
+      },
+      "gimmicks": {
+        "tera": "flying"
+      },
+      "heldItem": [
+        "booster_energy"
+      ]
+    },
+    {
+      "species": "magearna",
+      "level": 198,
+      "nature": "relaxed",
+      "ability": "soulheart",
+      "moveset": [
+        "calmmind",
+        "flashcannon",
+        "drainingkiss",
+        "storedpower"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 0
+      },
+      "evs": {
+        "hp": 248,
+        "def": 252,
+        "spd": 8
+      },
+      "heldItem": [
+        "mega_showdown:magearnite"
+      ]
+    },
+    {
+      "species": "rhyperior",
+      "level": 198,
+      "nature": "careful",
+      "ability": "solidrock",
+      "moveset": [
+        "rockslide",
+        "highhorsepower",
+        "toxic",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 4,
+        "spd": 252
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "weezing",
+      "level": 200,
+      "nature": "calm",
+      "ability": "levitate",
+      "moveset": [
+        "memento",
+        "clearsmog",
+        "willowisp",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "spa": 4,
+        "spd": 252
+      },
+      "heldItem": [
+        "rocky_helmet"
+      ]
+    }
+  ]
+}

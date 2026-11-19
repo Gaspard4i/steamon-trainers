@@ -1,0 +1,153 @@
+{
+  "name": "Flare Grunt Pike",
+  "identity": "Flare Grunt Pike",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.2
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "sharpedo",
+      "level": 88,
+      "nature": "jolly",
+      "ability": "speedboost",
+      "moveset": [
+        "protect",
+        "crunch",
+        "waterfall",
+        "psychicfangs"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "focus_sash"
+      ]
+    },
+    {
+      "species": "mandibuzz",
+      "level": 88,
+      "nature": "impish",
+      "ability": "overcoat",
+      "moveset": [
+        "foulplay",
+        "roost",
+        "defog",
+        "toxic"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "liepard",
+      "level": 88,
+      "nature": "impish",
+      "ability": "prankster",
+      "moveset": [
+        "knockoff",
+        "encore",
+        "thunderwave",
+        "foulplay"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "cacturne",
+      "level": 88,
+      "nature": "jolly",
+      "ability": "waterabsorb",
+      "moveset": [
+        "suckerpunch",
+        "seedbomb",
+        "drainpunch",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "bisharp",
+      "level": 90,
+      "nature": "jolly",
+      "ability": "defiant",
+      "moveset": [
+        "suckerpunch",
+        "ironhead",
+        "knockoff",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "black_glasses"
+      ]
+    }
+  ]
+}

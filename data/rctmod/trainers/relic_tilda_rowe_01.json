@@ -1,0 +1,124 @@
+{
+  "name": "Tilda Rowe",
+  "identity": "Tilda Rowe",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.2
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "gigalith",
+      "level": 100,
+      "nature": "adamant",
+      "ability": "sturdy",
+      "moveset": [
+        "stealthrock",
+        "rockblast",
+        "earthquake",
+        "heavyslam"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "def": 4
+      },
+      "heldItem": [
+        "custap_berry"
+      ]
+    },
+    {
+      "species": "crustle",
+      "level": 100,
+      "nature": "adamant",
+      "ability": "sturdy",
+      "moveset": [
+        "shellsmash",
+        "xscissor",
+        "rockblast",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "def": 4
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "excadrill",
+      "level": 100,
+      "nature": "jolly",
+      "ability": "sandrush",
+      "moveset": [
+        "earthquake",
+        "ironhead",
+        "rockslide",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "atk": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "rhyperior",
+      "level": 102,
+      "nature": "adamant",
+      "ability": "solidrock",
+      "moveset": [
+        "earthquake",
+        "stoneedge",
+        "megahorn",
+        "rockpolish"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "weakness_policy"
+      ]
+    }
+  ]
+}

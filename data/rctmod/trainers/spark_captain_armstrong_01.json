@@ -1,0 +1,203 @@
+{
+  "name": "Captain Armstrong",
+  "identity": "Captain Armstrong",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.1
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "greattusk",
+      "level": 198,
+      "nature": "jolly",
+      "ability": "protosynthesis",
+      "moveset": [
+        "headlongrush",
+        "icespinner",
+        "rapidspin",
+        "stealthrock"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 4,
+        "spe": 252
+      },
+      "gimmicks": {
+        "tera": "water"
+      },
+      "heldItem": [
+        "rocky_helmet"
+      ]
+    },
+    {
+      "species": "urshifu",
+      "level": 198,
+      "nature": "adamant",
+      "ability": "unseenfist",
+      "moveset": [
+        "surgingstrikes",
+        "closecombat",
+        "aquajet",
+        "uturn"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "def": 4,
+        "spe": 252
+      },
+      "aspects": [
+        "rapid_strike"
+      ],
+      "gimmicks": {
+        "tera": "water"
+      },
+      "heldItem": [
+        "choice_band"
+      ]
+    },
+    {
+      "species": "sneasler",
+      "level": 198,
+      "nature": "adamant",
+      "ability": "unburden",
+      "moveset": [
+        "direclaw",
+        "closecombat",
+        "throatchop",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "gimmicks": {
+        "tera": "dark"
+      },
+      "heldItem": [
+        "grassy_seed"
+      ]
+    },
+    {
+      "species": "rillaboom",
+      "level": 198,
+      "nature": "adamant",
+      "ability": "grassysurge",
+      "moveset": [
+        "grassyglide",
+        "woodhammer",
+        "uturn",
+        "knockoff"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "gimmicks": {
+        "dynamax": true,
+        "gmax": true
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "annihilape",
+      "level": 198,
+      "nature": "careful",
+      "ability": "defiant",
+      "moveset": [
+        "bulkup",
+        "taunt",
+        "drainpunch",
+        "ragefist"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 240,
+        "spd": 252,
+        "spe": 16
+      },
+      "gimmicks": {
+        "tera": "water"
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "volcarona",
+      "level": 200,
+      "nature": "modest",
+      "ability": "flamebody",
+      "moveset": [
+        "quiverdance",
+        "flamethrower",
+        "bugbuzz",
+        "gigadrain"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "spa": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "gimmicks": {
+        "tera": "water"
+      },
+      "heldItem": [
+        "heavy_duty_boots"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "name": "Crystal Isla",
+  "identity": "Crystal Isla",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.1
+    }
+  },
+  "battleFormat": "GEN_9_DOUBLES",
+  "team": [
+    {
+      "species": "whimsicott",
+      "level": 198,
+      "nature": "bold",
+      "ability": "prankster",
+      "moveset": [
+        "tailwind",
+        "faketears",
+        "moonblast",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 52,
+        "spa": 148,
+        "spd": 56
+      },
+      "heldItem": [
+        "focus_sash"
+      ]
+    },
+    {
+      "species": "torkoal",
+      "level": 198,
+      "nature": "quiet",
+      "ability": "drought",
+      "moveset": [
+        "eruption",
+        "heatwave",
+        "earthpower",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 0
+      },
+      "evs": {
+        "hp": 248,
+        "spa": 252,
+        "spd": 8
+      },
+      "gimmicks": {
+        "tera": "fire"
+      },
+      "heldItem": [
+        "heat_rock"
+      ]
+    },
+    {
+      "species": "chiyu",
+      "level": 198,
+      "nature": "timid",
+      "ability": "beadsofruin",
+      "moveset": [
+        "heatwave",
+        "darkpulse",
+        "flamethrower",
+        "snarl"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "spa": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "gimmicks": {
+        "tera": "fire"
+      },
+      "heldItem": [
+        "choice_specs"
+      ]
+    },
+    {
+      "species": "gholdengo",
+      "level": 198,
+      "nature": "modest",
+      "ability": "goodasgold",
+      "moveset": [
+        "protect",
+        "nastyplot",
+        "makeitrain",
+        "shadowball"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 248,
+        "def": 40,
+        "spa": 112,
+        "spd": 24,
+        "spe": 84
+      },
+      "gimmicks": {
+        "tera": "dragon"
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "torterra",
+      "level": 198,
+      "nature": "jolly",
+      "ability": "overgrow",
+      "moveset": [
+        "shellsmash",
+        "headlongrush",
+        "woodhammer",
+        "rockslide"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "gimmicks": {
+        "tera": "fairy"
+      },
+      "heldItem": [
+        "white_herb"
+      ]
+    },
+    {
+      "species": "walkingwake",
+      "level": 200,
+      "nature": "timid",
+      "ability": "protosynthesis",
+      "moveset": [
+        "hydrosteam",
+        "dragonpulse",
+        "flamethrower",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "spa": 244,
+        "spd": 12,
+        "spe": 252
+      },
+      "gimmicks": {
+        "tera": "steel"
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    }
+  ]
+}

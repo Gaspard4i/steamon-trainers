@@ -1,0 +1,13 @@
+{
+  "type": "rival",
+  "series": [
+    "steamos_might"
+  ],
+  "requiredDefeats": [
+    [
+      "might_mira_okoye_03"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

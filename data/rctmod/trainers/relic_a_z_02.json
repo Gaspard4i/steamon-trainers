@@ -1,0 +1,184 @@
+{
+  "name": "A.Z.",
+  "identity": "A.Z.",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.15
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "chesnaught",
+      "level": 129,
+      "nature": "impish",
+      "ability": "bulletproof",
+      "moveset": [
+        "spikyshield",
+        "woodhammer",
+        "drainpunch",
+        "spikes"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "gourgeist",
+      "level": 129,
+      "nature": "impish",
+      "ability": "frisk",
+      "moveset": [
+        "seedbomb",
+        "shadowsneak",
+        "willowisp",
+        "synthesis"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "meowstic",
+      "level": 129,
+      "nature": "calm",
+      "ability": "prankster",
+      "moveset": [
+        "reflect",
+        "lightscreen",
+        "yawn",
+        "psychic"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 4,
+        "spd": 252
+      },
+      "heldItem": [
+        "light_clay"
+      ]
+    },
+    {
+      "species": "aegislash",
+      "level": 129,
+      "nature": "adamant",
+      "ability": "stancechange",
+      "moveset": [
+        "kingsshield",
+        "shadowsneak",
+        "sacredsword",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "def": 4
+      },
+      "heldItem": [
+        "weakness_policy"
+      ]
+    },
+    {
+      "species": "slurpuff",
+      "level": 129,
+      "nature": "jolly",
+      "ability": "unburden",
+      "moveset": [
+        "bellydrum",
+        "playrough",
+        "return",
+        "drainpunch"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "floette",
+      "level": 131,
+      "nature": "calm",
+      "ability": "flowerveil",
+      "moveset": [
+        "lightofruin",
+        "moonblast",
+        "calmmind",
+        "wish"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 4,
+        "spd": 252
+      },
+      "aspects": [
+        "flower-eternal"
+      ],
+      "heldItem": [
+        "leftovers"
+      ]
+    }
+  ]
+}

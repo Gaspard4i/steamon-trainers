@@ -1,0 +1,85 @@
+{
+  "name": "Tiago Lemos",
+  "identity": "Tiago Lemos",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.35
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "pelipper",
+      "level": 45,
+      "nature": "modest",
+      "ability": "drizzle",
+      "moveset": [
+        "hurricane",
+        "surf",
+        "roost",
+        "tailwind"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "primeape",
+      "level": 45,
+      "nature": "adamant",
+      "ability": "defiant",
+      "moveset": [
+        "closecombat",
+        "gunkshot",
+        "earthquake",
+        "stoneedge"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    },
+    {
+      "species": "poliwrath",
+      "level": 47,
+      "nature": "adamant",
+      "ability": "waterabsorb",
+      "moveset": [
+        "waterfall",
+        "drainpunch",
+        "icepunch",
+        "bulkup"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    }
+  ]
+}

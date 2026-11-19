@@ -1,0 +1,19 @@
+{
+  "type": "rival",
+  "series": [
+    "steamos_might"
+  ],
+  "requiredDefeats": [
+    [
+      "might_richard_nuevo_01"
+    ],
+    [
+      "might_crystal_isla_01"
+    ],
+    [
+      "might_captain_armstrong_01"
+    ]
+  ],
+  "optional": false,
+  "spawnWeightFactor": 0
+}

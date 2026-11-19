@@ -1,0 +1,156 @@
+{
+  "name": "Dr. Mordecai Vane",
+  "identity": "Dr. Mordecai Vane",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.2
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "weezing",
+      "level": 96,
+      "nature": "bold",
+      "ability": "neutralizinggas",
+      "moveset": [
+        "strangesteam",
+        "willowisp",
+        "toxicspikes",
+        "painsplit"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "def": 252,
+        "spd": 4
+      },
+      "aspects": [
+        "galarian"
+      ],
+      "heldItem": [
+        "black_sludge"
+      ]
+    },
+    {
+      "species": "reuniclus",
+      "level": 96,
+      "nature": "modest",
+      "ability": "magicguard",
+      "moveset": [
+        "psychic",
+        "focusblast",
+        "calmmind",
+        "recover"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "spa": 252,
+        "def": 4
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "magmortar",
+      "level": 96,
+      "nature": "modest",
+      "ability": "flamebody",
+      "moveset": [
+        "flamethrower",
+        "thunderbolt",
+        "focusblast",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "spa": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "scolipede",
+      "level": 96,
+      "nature": "jolly",
+      "ability": "speedboost",
+      "moveset": [
+        "swordsdance",
+        "megahorn",
+        "earthquake",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "def": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "focus_sash"
+      ]
+    },
+    {
+      "species": "chandelure",
+      "level": 98,
+      "nature": "timid",
+      "ability": "flashfire",
+      "moveset": [
+        "shadowball",
+        "fireblast",
+        "energyball",
+        "trick"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "spa": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "choice_scarf"
+      ]
+    }
+  ]
+}

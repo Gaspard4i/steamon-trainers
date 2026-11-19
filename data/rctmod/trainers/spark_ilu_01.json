@@ -1,0 +1,121 @@
+{
+  "name": "Ilu",
+  "identity": "Ilu",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.3
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "gogoat",
+      "level": 65,
+      "nature": "adamant",
+      "ability": "sapsipper",
+      "moveset": [
+        "hornleech",
+        "bulkup",
+        "earthquake",
+        "milkdrink"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "atk": 100
+      },
+      "heldItem": [
+        "miracle_seed"
+      ]
+    },
+    {
+      "species": "leafeon",
+      "level": 65,
+      "nature": "jolly",
+      "ability": "chlorophyll",
+      "moveset": [
+        "leafblade",
+        "knockoff",
+        "swordsdance",
+        "xscissor"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "atk": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "abomasnow",
+      "level": 65,
+      "nature": "modest",
+      "ability": "snowwarning",
+      "moveset": [
+        "blizzard",
+        "woodhammer",
+        "iceshard",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "spa": 100
+      },
+      "heldItem": [
+        "never_melt_ice"
+      ]
+    },
+    {
+      "species": "torterra",
+      "level": 67,
+      "nature": "adamant",
+      "ability": "overgrow",
+      "moveset": [
+        "woodhammer",
+        "earthquake",
+        "stealthrock",
+        "synthesis"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "atk": 100
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    }
+  ]
+}

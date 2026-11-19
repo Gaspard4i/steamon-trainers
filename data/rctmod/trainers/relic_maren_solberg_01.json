@@ -1,0 +1,85 @@
+{
+  "name": "Maren Solberg",
+  "identity": "Maren Solberg",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.35
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "lanturn",
+      "level": 46,
+      "nature": "bold",
+      "ability": "voltabsorb",
+      "moveset": [
+        "scald",
+        "thunderbolt",
+        "icebeam",
+        "thunderwave"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "mantine",
+      "level": 46,
+      "nature": "calm",
+      "ability": "waterabsorb",
+      "moveset": [
+        "surf",
+        "airslash",
+        "wingattack",
+        "haze"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    },
+    {
+      "species": "crawdaunt",
+      "level": 48,
+      "nature": "adamant",
+      "ability": "adaptability",
+      "moveset": [
+        "crabhammer",
+        "crunch",
+        "knockoff",
+        "swordsdance"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Dax Moreau",
+  "identity": "Dax Moreau",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.35
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "pawniard",
+      "level": 53,
+      "nature": "adamant",
+      "ability": "defiant",
+      "moveset": [
+        "furycutter",
+        "metalclaw",
+        "scaryface",
+        "torment"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    },
+    {
+      "species": "quilava",
+      "level": 55,
+      "nature": "modest",
+      "ability": "blaze",
+      "moveset": [
+        "ember",
+        "quickattack",
+        "swift",
+        "smokescreen"
+      ],
+      "ivs": {
+        "hp": 12,
+        "atk": 12,
+        "def": 12,
+        "spa": 12,
+        "spd": 12,
+        "spe": 12
+      },
+      "evs": {},
+      "heldItem": [
+        "oran_berry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "name": "Flare Grunt Quill",
+  "identity": "Flare Grunt Quill",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.2
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "magcargo",
+      "level": 91,
+      "nature": "modest",
+      "ability": "flamebody",
+      "moveset": [
+        "lavaplume",
+        "earthpower",
+        "stealthrock",
+        "recover"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "spa": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "salazzle",
+      "level": 91,
+      "nature": "timid",
+      "ability": "corrosion",
+      "moveset": [
+        "fireblast",
+        "sludgewave",
+        "nastyplot",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 0,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "spa": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    },
+    {
+      "species": "braviary",
+      "level": 91,
+      "nature": "jolly",
+      "ability": "sheerforce",
+      "moveset": [
+        "bravebird",
+        "closecombat",
+        "rockslide",
+        "roost"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "flareon",
+      "level": 91,
+      "nature": "adamant",
+      "ability": "flashfire",
+      "moveset": [
+        "flareblitz",
+        "facade",
+        "quickattack",
+        "willowisp"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "hp": 252,
+        "atk": 252,
+        "spd": 4
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "staraptor",
+      "level": 93,
+      "nature": "jolly",
+      "ability": "reckless",
+      "moveset": [
+        "bravebird",
+        "closecombat",
+        "doubleedge",
+        "uturn"
+      ],
+      "ivs": {
+        "hp": 31,
+        "atk": 31,
+        "def": 31,
+        "spa": 31,
+        "spd": 31,
+        "spe": 31
+      },
+      "evs": {
+        "atk": 252,
+        "spd": 4,
+        "spe": 252
+      },
+      "heldItem": [
+        "choice_band"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "name": "Brann",
+  "identity": "Brann",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.3
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "sudowoodo",
+      "level": 56,
+      "nature": "impish",
+      "ability": "rockhead",
+      "moveset": [
+        "woodhammer",
+        "headsmash",
+        "suckerpunch",
+        "earthquake"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "atk": 100
+      },
+      "heldItem": [
+        "rocky_helmet"
+      ]
+    },
+    {
+      "species": "rhydon",
+      "level": 56,
+      "nature": "adamant",
+      "ability": "lightningrod",
+      "moveset": [
+        "stoneedge",
+        "earthquake",
+        "megahorn",
+        "rockblast"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "atk": 100
+      },
+      "heldItem": [
+        "eviolite"
+      ]
+    },
+    {
+      "species": "heracross",
+      "level": 56,
+      "nature": "jolly",
+      "ability": "guts",
+      "moveset": [
+        "closecombat",
+        "megahorn",
+        "knockoff",
+        "rockblast"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "atk": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "choice_band"
+      ]
+    },
+    {
+      "species": "mamoswine",
+      "level": 58,
+      "nature": "adamant",
+      "ability": "thickfat",
+      "moveset": [
+        "iceshard",
+        "iciclecrash",
+        "earthquake",
+        "ancientpower"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "atk": 100
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    }
+  ]
+}

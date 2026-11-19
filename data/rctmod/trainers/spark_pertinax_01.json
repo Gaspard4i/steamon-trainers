@@ -1,0 +1,100 @@
+{
+  "name": "Pertinax",
+  "identity": "Pertinax",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.3
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "stoutland",
+      "level": 61,
+      "nature": "jolly",
+      "ability": "intimidate",
+      "moveset": [
+        "return",
+        "crunch",
+        "wildcharge",
+        "playrough"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "atk": 100,
+        "spd": 100,
+        "spe": 100
+      },
+      "heldItem": [
+        "focus_sash"
+      ]
+    },
+    {
+      "species": "mudsdale",
+      "level": 61,
+      "nature": "impish",
+      "ability": "stamina",
+      "moveset": [
+        "highhorsepower",
+        "heavyslam",
+        "rockslide",
+        "rest"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "atk": 100,
+        "def": 100
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "slowbro",
+      "level": 63,
+      "nature": "quiet",
+      "ability": "quickdraw",
+      "moveset": [
+        "shellsidearm",
+        "psychic",
+        "surf",
+        "slackoff"
+      ],
+      "ivs": {
+        "hp": 20,
+        "atk": 20,
+        "def": 20,
+        "spa": 20,
+        "spd": 20,
+        "spe": 20
+      },
+      "evs": {
+        "hp": 100,
+        "spa": 100,
+        "spd": 100
+      },
+      "aspects": [
+        "galarian"
+      ],
+      "heldItem": [
+        "quick_claw"
+      ]
+    }
+  ]
+}

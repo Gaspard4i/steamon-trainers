@@ -1,0 +1,75 @@
+{
+  "name": "Gus Thornton",
+  "identity": "Gus Thornton",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.4
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "machop",
+      "level": 21,
+      "nature": "hardy",
+      "ability": "guts",
+      "moveset": [
+        "karatechop",
+        "lowkick",
+        "bulkup",
+        "seismictoss"
+      ],
+      "ivs": {
+        "hp": 14,
+        "atk": 14,
+        "def": 14,
+        "spa": 14,
+        "spd": 14,
+        "spe": 14
+      },
+      "evs": {
+        "hp": 0,
+        "atk": 0,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "heldItem": [
+        "black_belt"
+      ]
+    },
+    {
+      "species": "croagunk",
+      "level": 23,
+      "nature": "hardy",
+      "ability": "anticipation",
+      "moveset": [
+        "poisonjab",
+        "suckerpunch",
+        "feintattack",
+        "swagger"
+      ],
+      "ivs": {
+        "hp": 14,
+        "atk": 14,
+        "def": 14,
+        "spa": 14,
+        "spd": 14,
+        "spe": 14
+      },
+      "evs": {
+        "hp": 0,
+        "atk": 0,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 0
+      },
+      "heldItem": [
+        "oran_berry"
+      ]
+    }
+  ]
+}

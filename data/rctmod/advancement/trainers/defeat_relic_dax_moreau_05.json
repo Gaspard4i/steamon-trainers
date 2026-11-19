@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "defeat_relic_dax_moreau_05": {
+      "trigger": "rctmod:defeat_count",
+      "conditions": {
+        "count": 1,
+        "entity": {
+          "type": null
+        },
+        "trainer_ids": [
+          "relic_dax_moreau_05"
+        ],
+        "trainer_type": null
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": null,
+    "description": {
+      "text": "Defeat Dax Moreau."
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "id": "cobblemon:poke_ball"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Dax Moreau"
+    }
+  },
+  "requirements": [
+    [
+      "defeat_relic_dax_moreau_05"
+    ]
+  ]
+}

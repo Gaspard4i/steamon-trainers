@@ -1,0 +1,152 @@
+{
+  "name": "Flare Grunt Sable",
+  "identity": "Flare Grunt Sable",
+  "ai": {
+    "type": "rct",
+    "data": {
+      "maxSelectMargin": 0.2
+    }
+  },
+  "battleFormat": "GEN_9_SINGLES",
+  "team": [
+    {
+      "species": "mightyena",
+      "level": 90,
+      "nature": "jolly",
+      "ability": "intimidate",
+      "moveset": [
+        "crunch",
+        "playrough",
+        "suckerpunch",
+        "howl"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "hp": 200,
+        "atk": 200,
+        "spe": 100
+      },
+      "heldItem": [
+        "sitrus_berry"
+      ]
+    },
+    {
+      "species": "drapion",
+      "level": 90,
+      "nature": "adamant",
+      "ability": "sniper",
+      "moveset": [
+        "knockoff",
+        "crosspoison",
+        "earthquake",
+        "toxicspikes"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "hp": 200,
+        "atk": 200,
+        "def": 100
+      },
+      "heldItem": [
+        "black_sludge"
+      ]
+    },
+    {
+      "species": "mandibuzz",
+      "level": 90,
+      "nature": "bold",
+      "ability": "overcoat",
+      "moveset": [
+        "foulplay",
+        "roost",
+        "taunt",
+        "uturn"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "hp": 252,
+        "def": 200,
+        "spd": 50
+      },
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "species": "torkoal",
+      "level": 90,
+      "nature": "bold",
+      "ability": "drought",
+      "moveset": [
+        "lavaplume",
+        "stealthrock",
+        "rapidspin",
+        "yawn"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 28,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "hp": 252,
+        "def": 150,
+        "spa": 100
+      },
+      "heldItem": [
+        "heat_rock"
+      ]
+    },
+    {
+      "species": "salazzle",
+      "level": 92,
+      "nature": "timid",
+      "ability": "corrosion",
+      "moveset": [
+        "fireblast",
+        "sludgewave",
+        "nastyplot",
+        "protect"
+      ],
+      "ivs": {
+        "hp": 28,
+        "atk": 0,
+        "def": 28,
+        "spa": 28,
+        "spd": 28,
+        "spe": 28
+      },
+      "evs": {
+        "spa": 252,
+        "spe": 252
+      },
+      "heldItem": [
+        "life_orb"
+      ]
+    }
+  ]
+}

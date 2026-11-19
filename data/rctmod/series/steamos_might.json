@@ -1,0 +1,9 @@
+{
+  "title": {
+    "translatable": "series.steamon_trainer.steamos_might.title"
+  },
+  "description": {
+    "translatable": "series.steamon_trainer.steamos_might.description"
+  },
+  "difficulty": 5
+}

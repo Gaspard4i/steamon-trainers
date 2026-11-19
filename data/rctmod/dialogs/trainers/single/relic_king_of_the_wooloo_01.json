@@ -1,0 +1,32 @@
+{
+  "on_battle_start": [
+    {
+      "translatable": "dialogs.steamon_trainer.relic_king_of_the_wooloo_01.on_battle_start.0"
+    },
+    {
+      "translatable": "dialogs.steamon_trainer.relic_king_of_the_wooloo_01.on_battle_start.1"
+    },
+    {
+      "translatable": "dialogs.steamon_trainer.relic_king_of_the_wooloo_01.on_battle_start.2"
+    }
+  ],
+  "on_battle_won": [
+    {
+      "translatable": "dialogs.steamon_trainer.relic_king_of_the_wooloo_01.on_battle_won.0"
+    },
+    {
+      "translatable": "dialogs.steamon_trainer.relic_king_of_the_wooloo_01.on_battle_won.1"
+    }
+  ],
+  "on_battle_lost": [
+    {
+      "translatable": "dialogs.steamon_trainer.relic_king_of_the_wooloo_01.on_battle_lost.0"
+    },
+    {
+      "translatable": "dialogs.steamon_trainer.relic_king_of_the_wooloo_01.on_battle_lost.1"
+    },
+    {
+      "translatable": "dialogs.steamon_trainer.relic_king_of_the_wooloo_01.on_battle_lost.2"
+    }
+  ]
+}
