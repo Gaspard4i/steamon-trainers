@@ -1,0 +1,46 @@
+name: Modrinth page
+
+# Updates the description (body) of the Modrinth page from publish/DESCRIPTION.md and its summary, and keeps the
+# project unlisted. The version upload is done by publish.yml. CurseForge is handled by hand.
+# Runs by hand, and after a publish.
+#
+# Needs the secret MODRINTH_TOKEN (scope PROJECT_WRITE) and the variable MODRINTH_PROJECT_ID.
+on:
+  workflow_dispatch:
+    inputs:
+      status:
+        description: Project status to set, unlisted keeps it out of the search and the lists
+        type: choice
+        options: [unlisted, approved]
+        default: unlisted
+
+permissions:
+  contents: read
+
+concurrency:
+  group: modrinth-page
+  cancel-in-progress: false
+
+jobs:
+  page:
+    runs-on: ubuntu-latest
+    env:
+      MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+      MODRINTH_PROJECT_ID: ${{ vars.MODRINTH_PROJECT_ID }}
+      USER_AGENT: github.com/Gaspard4i/steamon-trainers (page workflow)
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update the description and the summary
+        run: |
+          jq -n --rawfile body publish/DESCRIPTION.md \
+            '{body: $body, description: "The trainers of the Steamon SMP for Radical Cobblemon Trainers: the Steamos story in three team versions (Spark, Relic, Might) and the Steamon League."}' > page.json
+          curl --fail-with-body -X PATCH "https://api.modrinth.com/v2/project/$MODRINTH_PROJECT_ID" \
+            -H "Authorization: $MODRINTH_TOKEN" -H "User-Agent: $USER_AGENT" \
+            -H "Content-Type: application/json" --data @page.json
+
+      - name: Set the project status
+        run: |
+          curl --fail-with-body -X PATCH "https://api.modrinth.com/v2/project/$MODRINTH_PROJECT_ID" \
+            -H "Authorization: $MODRINTH_TOKEN" -H "User-Agent: $USER_AGENT" \
+            -H "Content-Type: application/json" --data "{\"status\":\"${{ inputs.status }}\"}"

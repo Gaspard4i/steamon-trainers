@@ -1,16 +1,22 @@
 name: Publish Steamon Trainers
 
+# Builds the datapack zip, checks it, refreshes the stable "latest" GitHub release and publishes the version to Modrinth.
+# CurseForge is published by hand, nothing here touches it.
+#
+# Needs, in the repository settings:
+#   secrets    MODRINTH_TOKEN
+#   variables  MODRINTH_PROJECT_ID (id or slug of the Modrinth project)
 on:
   push:
     tags:
       # Tag format: v<version>-<channel>  (channel optional, defaults to alpha)
       #   channel = alpha | beta | release
-      # e.g. v1.0.0-alpha, v1.0.0-beta, v1.0.0-release, or plain v1.0.0
+      # e.g. v2.0.0-alpha, v2.0.0-beta, v2.0.0-release, or plain v2.0.0
       - 'v*'
   workflow_dispatch:
     inputs:
       version:
-        description: 'Version (e.g. 1.0.0)'
+        description: 'Version (e.g. 2.0.0)'
         required: true
         type: string
       channel:
@@ -36,7 +42,7 @@ jobs:
             VERSION="${{ inputs.version }}"
             CHANNEL="${{ inputs.channel }}"
           else
-            TAG="${GITHUB_REF_NAME}"        # e.g. v1.0.0-beta
+            TAG="${GITHUB_REF_NAME}"        # e.g. v2.0.0-beta
             REST="${TAG#v}"
             if [[ "$REST" == *-alpha ]]; then CHANNEL=alpha; VERSION="${REST%-alpha}"
             elif [[ "$REST" == *-beta ]]; then CHANNEL=beta; VERSION="${REST%-beta}"
@@ -64,13 +70,12 @@ jobs:
           if [ "$FAIL" -ne 0 ]; then exit 1; fi
           echo "[ok] All JSON files are valid."
 
-      - name: Validate pack.mcmeta and trainer graph
+      - name: Validate pack.mcmeta, files and trainer graphs
         run: |
           set -euo pipefail
           python3 - << 'PYEOF'
           import json, os, sys
 
-          # pack_format must be 48 (MC 1.21.1)
           with open('pack.mcmeta', encoding='utf-8') as f:
               meta = json.load(f)
           fmt = meta.get('pack', {}).get('pack_format')
@@ -79,72 +84,97 @@ jobs:
           print(f"[ok] pack_format = {fmt}")
 
           base = "data/rctmod"
-          dirs = {
-              "mobs": f"{base}/mobs/trainers/single",
-              "trainers": f"{base}/trainers",
-              "dialogs": f"{base}/dialogs/trainers",
-              "loot": f"{base}/loot_table/trainers/single",
-          }
-          ids_by_dir = {}
-          for name, d in dirs.items():
-              if not os.path.isdir(d):
-                  sys.exit(f"[FAIL] missing directory: {d}")
-              ids_by_dir[name] = set(f[:-5] for f in os.listdir(d) if f.endswith(".json"))
-
-          texture_dir = "assets/rctmod/textures/trainers/single"
-          texture_ids = set(f[:-4] for f in os.listdir(texture_dir) if f.endswith(".png"))
-
+          mobs_dir = f"{base}/mobs/trainers/single"
+          trainers_dir = f"{base}/trainers"
+          dialogs_dir = f"{base}/dialogs/trainers/single"
           adv_dir = f"{base}/advancement/trainers"
-          adv_ids = set(f[len("defeat_"):-5] for f in os.listdir(adv_dir) if f.endswith(".json"))
+          loot_dir = f"{base}/loot_table/trainers/single"
+          tex_dir = "assets/rctmod/textures/trainers/single"
+          series_dir = f"{base}/series"
+          types_dir = f"{base}/trainer_types"
 
-          reference = ids_by_dir["mobs"]
-          if len(reference) != 13:
-              sys.exit(f"[FAIL] expected 13 trainers, found {len(reference)}")
+          def ids(d, suffix):
+              return {f[:-len(suffix)] for f in os.listdir(d) if f.endswith(suffix)} if os.path.isdir(d) else set()
 
-          all_sets = {**ids_by_dir, "textures": texture_ids, "advancement": adv_ids}
-          for name, s in all_sets.items():
-              if s != reference:
-                  sys.exit(f"[FAIL] ID mismatch in {name}: missing={reference - s}, extra={s - reference}")
-          print(f"[ok] All {len(reference)} trainer IDs are consistent across mobs/trainers/dialogs/loot/textures/advancement")
+          mobs = ids(mobs_dir, ".json")
+          trainers = ids(trainers_dir, ".json")
+          dialogs = ids(dialogs_dir, ".json")
+          advs = {i[len("defeat_"):] for i in ids(adv_dir, ".json")}
+          if mobs != trainers:
+              sys.exit(f"[FAIL] mobs and trainers differ: {sorted(mobs ^ trainers)[:10]}")
+          missing_dialog = sorted(mobs - dialogs)
+          missing_adv = sorted(mobs - advs)
+          if missing_dialog or missing_adv:
+              sys.exit(f"[FAIL] missing dialogs {missing_dialog[:10]} or advancements {missing_adv[:10]}")
+          print(f"[ok] {len(mobs)} trainers, each with mob, team, dialog and defeat advancement")
 
-          # requiredDefeats graph: no broken refs, exactly one root, fully connected chain
-          graph = {}
-          for tid in reference:
-              with open(os.path.join(dirs["mobs"], tid + ".json"), encoding="utf-8") as f:
+          # the league also has loot tables and one skin per trainer
+          league = {i for i in mobs if i.startswith("steamon_")}
+          loot, tex = ids(loot_dir, ".json"), ids(tex_dir, ".png")
+          if league - loot or league - tex:
+              sys.exit(f"[FAIL] league trainers without loot {sorted(league - loot)} or skin {sorted(league - tex)}")
+          print(f"[ok] {len(league)} league trainers with loot tables and skins")
+
+          series_files = ids(series_dir, ".json")
+          expected = {"steamon", "steamos_spark", "steamos_relic", "steamos_might"}
+          if series_files != expected:
+              sys.exit(f"[FAIL] series are {sorted(series_files)}, expected {sorted(expected)}")
+
+          types_available = {"battleground", "champ", "e4", "leader", "ligh_of_ruin", "normal", "rival",
+                             "team_galactic", "team_rocket", "team_shadow"} | ids(types_dir, ".json")
+
+          by_series = {s: {} for s in expected}
+          for tid in mobs:
+              with open(os.path.join(mobs_dir, tid + ".json"), encoding="utf-8") as f:
                   data = json.load(f)
-              reqs = data.get("requiredDefeats", [])
-              flat_refs = [r for group in reqs for r in group]
-              graph[tid] = flat_refs
-              for ref in flat_refs:
-                  if ref not in reference:
-                      sys.exit(f"[FAIL] {tid} requiredDefeats references unknown trainer '{ref}'")
+              if data.get("type", "normal") not in types_available:
+                  sys.exit(f"[FAIL] {tid}: unknown trainer type {data.get('type')}")
+              ser = data.get("series", [])
+              if len(ser) != 1 or ser[0] not in expected:
+                  sys.exit(f"[FAIL] {tid}: series must be exactly one of {sorted(expected)}, found {ser}")
+              by_series[ser[0]][tid] = [r for group in data.get("requiredDefeats", []) for r in group]
 
-          roots = [tid for tid, reqs in graph.items() if not reqs]
-          if len(roots) != 1:
-              sys.exit(f"[FAIL] expected exactly 1 root trainer (no prerequisites), found {len(roots)}: {roots}")
+          for name, graph in by_series.items():
+              if not graph:
+                  sys.exit(f"[FAIL] series {name} has no trainer")
+              for tid, refs in graph.items():
+                  for ref in refs:
+                      if ref not in graph:
+                          sys.exit(f"[FAIL] {tid} requires '{ref}' which is not in series {name}")
+              roots = [t for t, r in graph.items() if not r]
+              if len(roots) != 1:
+                  sys.exit(f"[FAIL] series {name}: expected one root trainer, found {roots}")
+              unlocks = {t: [] for t in graph}
+              for t, refs in graph.items():
+                  for r in refs:
+                      unlocks[r].append(t)
+              seen, todo = set(), [roots[0]]
+              while todo:
+                  n = todo.pop()
+                  if n in seen:
+                      continue
+                  seen.add(n)
+                  todo.extend(unlocks[n])
+              if seen != set(graph):
+                  sys.exit(f"[FAIL] series {name}: not connected, unreached {sorted(set(graph) - seen)[:10]}")
+              print(f"[ok] series {name}: {len(graph)} trainers, single root '{roots[0]}', fully connected")
 
-          unlocks = {tid: [] for tid in reference}
-          for tid, reqs in graph.items():
-              for r in reqs:
-                  unlocks[r].append(tid)
-
-          visited = set()
-          def walk(node):
-              visited.add(node)
-              for n in unlocks.get(node, []):
-                  if n not in visited:
-                      walk(n)
-          walk(roots[0])
-          if visited != reference:
-              sys.exit(f"[FAIL] trainer graph is not fully connected: unreached={reference - visited}")
-          print(f"[ok] requiredDefeats graph is a single connected chain from '{roots[0]}' through all {len(reference)} trainers")
-
-          # series.json sanity
-          with open(f"{base}/series/steamon.json", encoding="utf-8") as f:
-              series = json.load(f)
-          if "steamon" not in [os.path.splitext(f)[0] for f in os.listdir(f"{base}/series")]:
-              sys.exit("[FAIL] series/steamon.json missing")
-          print("[ok] series/steamon.json present")
+          # the lang keys used by the dialogs must exist
+          with open("assets/steamon_trainer/lang/en_us.json", encoding="utf-8") as f:
+              lang = json.load(f)
+          unknown = []
+          for tid in sorted(mobs):
+              if not tid.startswith("steamon_"):
+                  with open(os.path.join(dialogs_dir, tid + ".json"), encoding="utf-8") as f:
+                      d = json.load(f)
+                  for lines in d.values():
+                      for line in lines:
+                          key = line.get("translatable") if isinstance(line, dict) else None
+                          if key and key not in lang:
+                              unknown.append(key)
+          if unknown:
+              sys.exit(f"[FAIL] {len(unknown)} dialog keys missing in en_us.json, e.g. {unknown[:5]}")
+          print("[ok] all dialog lang keys exist")
           PYEOF
 
       - name: Build zip
@@ -171,18 +201,13 @@ jobs:
               bad = z.testzip()
               if bad:
                   sys.exit(f"[FAIL] Corrupt entry in zip: {bad}")
-
               if 'pack.mcmeta' not in names:
                   sys.exit("[FAIL] pack.mcmeta is not at the root of the zip")
-              print("[ok] pack.mcmeta is at the zip root")
-
               mobs = [n for n in names if n.startswith('data/rctmod/mobs/trainers/single/') and n.endswith('.json')]
-              textures = [n for n in names if n.startswith('assets/rctmod/textures/trainers/single/') and n.endswith('.png')]
-              if len(mobs) != 13:
-                  sys.exit(f"[FAIL] expected 13 files in mobs/trainers/single, found {len(mobs)}")
-              if len(textures) != 13:
-                  sys.exit(f"[FAIL] expected 13 files in assets/textures/trainers/single, found {len(textures)}")
-              print(f"[ok] zip contains {len(mobs)} mob files and {len(textures)} texture files")
+              on_disk = len([f for f in os.listdir('data/rctmod/mobs/trainers/single') if f.endswith('.json')])
+              if len(mobs) != on_disk:
+                  sys.exit(f"[FAIL] zip has {len(mobs)} mob files, repository has {on_disk}")
+              print(f"[ok] pack.mcmeta at the root, {len(mobs)} mob files in the zip")
           PYEOF
 
       - name: Update stable "latest" GitHub release
@@ -195,7 +220,7 @@ jobs:
           set -euo pipefail
           ASSET="Steamon-Trainers.zip"
           cp "$ZIP_PATH" "$ASSET"
-          NOTES="Always-latest Steamon Trainers datapack. This download link never changes. Current: ${VERSION} (${CHANNEL}). Requires RCTMod 0.18+, RCTAPI, Cobblemon 1.7.3+, Minecraft 1.21.1 NeoForge."
+          NOTES="Always-latest Steamon Trainers datapack. This download link never changes. Current: ${VERSION} (${CHANNEL}). Requires Minecraft 1.21.1 NeoForge, Cobblemon 1.8.x, RCTMod 0.19.2-beta and RCTAPI. Mega Showdown is needed for the Mega, Tera and Gigantamax trainers."
           if gh release view latest >/dev/null 2>&1; then
             gh release edit latest --title "Steamon Trainers (latest)" --notes "$NOTES"
             gh release upload latest "$ASSET" --clobber
@@ -224,13 +249,26 @@ jobs:
           PROJECT_ID="$MODRINTH_PROJECT_ID" NAME="Steamon Trainers $VERSION ($CHANNEL)" \
               VERSION_NUMBER="$VERSION" VERSION_TYPE="$CHANNEL" FEATURED="$FEATURED" \
               ZIP_PATH="$ZIP_PATH" python3 - <<'PYEOF' > /tmp/mr_data.json
-          import json, os
+          import json, os, re
+
+          changelog = ''
+          try:
+              text = open('CHANGELOG.md', encoding='utf-8').read()
+              m = re.search(r'^## \[' + re.escape(os.environ['VERSION_NUMBER']) + r'\][^\n]*\n(.*?)(?=^## \[|\Z)', text, re.S | re.M)
+              changelog = m.group(1).strip() if m else ''
+          except OSError:
+              pass
+
           print(json.dumps({
               'name': os.environ['NAME'],
               'version_number': os.environ['VERSION_NUMBER'],
-              'changelog': '',
+              'changelog': changelog,
               'project_id': os.environ['PROJECT_ID'],
-              'dependencies': [],
+              'dependencies': [
+                  {'project_id': 'lRwTUnD7', 'dependency_type': 'required'},
+                  {'project_id': 'MdwFAVRL', 'dependency_type': 'required'},
+                  {'project_id': 'SszvX85I', 'dependency_type': 'optional'},
+              ],
               'game_versions': ['1.21.1'],
               'version_type': os.environ['VERSION_TYPE'],
               'loaders': ['datapack'],
@@ -250,38 +288,3 @@ jobs:
           cat /tmp/mr_resp.json
           echo
           if [ "$HTTP" != "200" ]; then exit 1; fi
-
-      - name: Publish to CurseForge
-        if: vars.CURSEFORGE_ID != ''
-        env:
-          CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
-          CURSEFORGE_ID: ${{ vars.CURSEFORGE_ID }}
-          VERSION: ${{ steps.meta.outputs.version }}
-          CHANNEL: ${{ steps.meta.outputs.channel }}
-          ZIP_PATH: ${{ steps.build.outputs.zip_path }}
-        run: |
-          set -euo pipefail
-          if [ -z "${CURSEFORGE_TOKEN:-}" ]; then
-            echo "CURSEFORGE_TOKEN secret missing: skipping CurseForge publish."; exit 0
-          fi
-
-          VERSION="$VERSION" CHANNEL="$CHANNEL" python3 - <<'PYEOF' > /tmp/cf_meta.json
-          import json, os
-          print(json.dumps({
-              'changelog': '',
-              'changelogType': 'markdown',
-              'displayName': 'Steamon Trainers ' + os.environ['VERSION'] + ' (' + os.environ['CHANNEL'] + ')',
-              'releaseType': os.environ['CHANNEL'],
-              'gameVersions': [11779],
-          }))
-          PYEOF
-
-          HTTP=$(curl -s -o /tmp/cf_resp.json -w "%{http_code}" \
-            -X POST "https://minecraft.curseforge.com/api/projects/${CURSEFORGE_ID}/upload-file" \
-            -H "X-Api-Token: ${CURSEFORGE_TOKEN}" \
-            -H "User-Agent: github.com/Gaspard4i/steamon-trainers" \
-            -F "metadata=</tmp/cf_meta.json" \
-            -F "file=@${ZIP_PATH};type=application/zip")
-          echo "CurseForge HTTP: $HTTP"
-          cat /tmp/cf_resp.json; echo
-          if [ "$HTTP" != "200" ] && [ "$HTTP" != "201" ]; then exit 1; fi

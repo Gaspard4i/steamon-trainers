@@ -4,7 +4,7 @@ All notable changes to this project are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
-## [Unreleased]
+## [2.0.0] - 2026-11-19
 
 ### Added
 
@@ -16,6 +16,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Requirements: Cobblemon 1.8.x, RCTMod 0.19.2-beta, RCTAPI and Mega Showdown. Late story fights use levels above 100 and need Cobblemon `maxPokemonLevel` raised.
 - README rewritten as a short project summary.
+- The publish workflow now checks all four series and publishes to Modrinth only; a new workflow updates the Modrinth page.
+
+### Fixed
+
+- The dialogue of the Steamon League trainers moved to `dialogs/trainers/single/`, the folder RCTMod reads for per-trainer dialogue.
 
 ## [1.0.0] - 2026-07-28
 
